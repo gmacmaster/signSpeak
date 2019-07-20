@@ -42,7 +42,7 @@ import WorkSection from "./Sections/WorkSection.jsx";
 
 const dashboardRoutes = [];
 
-class LandingPage extends React.Component {
+class HelpTrain extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -59,30 +59,19 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+        <Parallax filter image={require("assets/img/landing-bg.jpg")} small>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>SgnSpeak.</h1>
-                <h3 className={classes.subtitle}>A Sign Language Translation Tool.
-                </h3>
+                <h2 className={classes.title}>Help Train Our Model!</h2>
                 <h4>
-                  We are working to bring the power of understanding to everyone
-                  using the power of AI. Our Computer Vision models allow anyone
-                  to understand sign language. It is our mission to reduce the stigma
-                  around deaf culture.
+                  Training a computer vision model requires a lot of data.
+                  We need your help to gather that data. By recording yourself
+                  signing various different signs and sending the resulting file
+                  to us, you will be making a great contribution to the project.
+                  We greatly appreciate your help.
                 </h4>
                 <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-play" />
-                  Watch Demo
-                </Button>
               </GridItem>
             </GridContainer>
           </div>
@@ -99,8 +88,8 @@ class LandingPage extends React.Component {
   }
 }
 
-LandingPage.propTypes = {
+HelpTrain.propTypes = {
   classes: PropTypes.object
 };
 
-export default withStyles(landingPageStyle)(LandingPage);
+export default withStyles(landingPageStyle)(HelpTrain);

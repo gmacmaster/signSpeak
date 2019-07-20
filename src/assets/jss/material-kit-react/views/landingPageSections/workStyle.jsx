@@ -36,6 +36,9 @@ const workStyle = {
   textCenter: {
     textAlign: "center"
   },
+  autoMargin: {
+    margin: '0 auto'
+  },
   textArea: {
     marginRight: "15px",
     marginLeft: "15px"

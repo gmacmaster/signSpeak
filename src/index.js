@@ -25,6 +25,7 @@ import "assets/scss/material-kit-react.scss?v=1.7.0";
 // pages for this product
 import AboutUs from "views/AboutUs/AboutUs";
 import Components from "views/Components/Components.jsx";
+import HelpTrain from "views/HelpTrain/HelpTrain";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
@@ -36,8 +37,9 @@ ReactDOM.render(
     <Switch>
       <Route path="/aboutUs" component={AboutUs} />
       <Route path="/component" component={Components} />
-      <Route path="/profile-page" component={ProfilePage} />
+      <Route path="/helpTrain" component={HelpTrain} />
       <Route path="/login-page" component={LoginPage} />
+      <Route path="/profile-page" component={ProfilePage} />
       <Route path="/" component={LandingPage} />
     </Switch>
   </Router>,
