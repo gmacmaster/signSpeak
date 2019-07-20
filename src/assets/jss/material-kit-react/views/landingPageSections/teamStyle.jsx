@@ -19,6 +19,9 @@ import { cardTitle, title } from "assets/jss/material-kit-react.jsx";
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
 
 const teamStyle = {
+  centered: {
+    margin: '0 auto'
+  },
   section: {
     padding: "70px 0",
     textAlign: "center"

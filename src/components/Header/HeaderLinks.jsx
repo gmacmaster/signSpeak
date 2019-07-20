@@ -44,7 +44,7 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Pages"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -52,27 +52,28 @@ function HeaderLinks({ ...props }) {
           buttonIcon={Apps}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
-              All components
+              All pages
             </Link>,
             <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
+              href="/"
               className={classes.dropdownLink}
             >
-              Documentation
+              Home
+            </a>,
+            <a
+              href="/"
+              className={classes.dropdownLink}
+            >
+              Help Train Our Model
+            </a>,
+            <a
+              href="/aboutUs"
+              className={classes.dropdownLink}
+            >
+              About US
             </a>
           ]}
         />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <CloudDownload className={classes.icons} /> Download
-        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
@@ -122,7 +123,7 @@ function HeaderLinks({ ...props }) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/gordomacmaster/?hl=en"
+            href="https://www.instagram.com/gordomacmaster"
             target="_blank"
             className={classes.navLink}
           >
