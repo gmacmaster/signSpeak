@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "279e6551aafea014115a159a52a2e9cf",
+    "revision": "7b6fff6afc91c1ba31be3aef9898be40",
     "url": "/signSpeak/index.html"
   },
   {
-    "revision": "2d5c871855fc35fb40b0",
+    "revision": "8b453e1de9fd84a1a24d",
     "url": "/signSpeak/static/css/main.d07006d0.chunk.css"
   },
   {
-    "revision": "ce18e33e67ef29c93e5a",
-    "url": "/signSpeak/static/js/2.85c0a047.chunk.js"
+    "revision": "c54173c8e91068606516",
+    "url": "/signSpeak/static/js/2.120a0633.chunk.js"
   },
   {
-    "revision": "2d5c871855fc35fb40b0",
-    "url": "/signSpeak/static/js/main.d7866628.chunk.js"
+    "revision": "8b453e1de9fd84a1a24d",
+    "url": "/signSpeak/static/js/main.258c6a21.chunk.js"
   },
   {
     "revision": "a0f2edff933a52207da9",
