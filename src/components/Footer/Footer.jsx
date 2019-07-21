@@ -45,7 +45,7 @@ function Footer({ ...props }) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="/signSpeak/#/aboutUs"
+                href={process.env.PUBLIC_URL+"/#/aboutUs"}
                 className={classes.block}
               >
                 About us
