@@ -33,9 +33,9 @@ import LoginPage from "views/LoginPage/LoginPage.jsx";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <HashRouter history={hist}>
+  <HashRouter history={hist} basename={'/'}>
     <Switch>
-      <Route path="/aboutUs" component={AboutUs} />
+      <Route path="/aboutUs#/" component={AboutUs} />
       <Route path="/components" component={Components} />
       <Route path="/helpTrain" component={HelpTrain} />
       <Route path="/login-page" component={LoginPage} />
