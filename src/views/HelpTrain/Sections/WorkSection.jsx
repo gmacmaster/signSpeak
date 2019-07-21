@@ -95,13 +95,6 @@ class WorkSection extends React.Component {
     return (
       <div className={classes.section}>
         <h2 className={classes.title}>Help Us Improve!</h2>
-        <h4 className={classes.description}>
-          Training a computer to be able to recognize sign language
-          is no easy task. We need your help train our model. What this
-          means is that we need people who know sign language to help!
-          It's super simple and doesn't take long at all. Want to see
-          the model in action? Click <a href="https://gmacmaster.github.io/visualizeModel/demo/" target="_blank">here</a>
-        </h4>
         {this.state.loadingModel ?
             <React.Fragment>
               <h3 className={classes.title}>Loading Model:</h3>

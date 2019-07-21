@@ -68,7 +68,7 @@ class TeamSection extends React.Component {
                     Gordon is a senior computer science major at the University of Vermont.
                     As a full stack engineer he has interned for <a href="https://tesla.com">Tesla</a> in Fremont, CA
                     and <a href="https://mamhousing.com/pmam.html">Pennsylvania Multifamily Asset Managers</a>. Gordon
-                    brings experience in web applications, backend systems, and machine learning.
+                    brings experience in web apps, backend systems, and machine learning.
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>

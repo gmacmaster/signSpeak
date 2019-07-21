@@ -51,11 +51,8 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All pages
-            </Link>,
             <a
-              href={process.env.PUBLIC_URL+'/'}
+              href={process.env.PUBLIC_URL+'/#/'}
               className={classes.dropdownLink}
             >
               Home

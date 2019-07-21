@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+            <state>
+              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#626#652#0" expanded="true" />
@@ -47,19 +48,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+        <entry file="file://$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="147">
+              <caret line="76" column="19" lean-forward="true" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="53" column="65" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
+            <state relative-caret-position="266">
+              <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
               <folding>
                 <element signature="e#753#814#0" expanded="true" />
               </folding>
@@ -70,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="102" column="111" selection-start-line="102" selection-start-column="111" selection-end-line="102" selection-end-column="111" />
+            <state relative-caret-position="130">
+              <caret line="96" column="59" selection-start-line="96" selection-start-column="59" selection-end-line="96" selection-end-column="59" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#753#814#0" expanded="true" />
@@ -113,19 +117,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#858#920#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -140,9 +131,9 @@
       <find>/signSpeak</find>
       <find>icon</find>
       <find>href=&quot;/</find>
-      <find>href</find>
       <find>href='/</find>
       <find>href={</find>
+      <find>href</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -161,25 +152,25 @@
         <option value="$PROJECT_DIR$/Documentation/tutorial-components.html" />
         <option value="$PROJECT_DIR$/src/views/Components/Components.jsx" />
         <option value="$PROJECT_DIR$/src/views/LandingPage/AboutUs.jsx" />
-        <option value="$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx" />
-        <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-react/views/componentsSections/downloadStyle.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/ProductSection.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/HelpTrain.jsx" />
-        <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/custom.css" />
-        <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/views/LandingPage/Sections/ProductSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.jsx" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" />
         <option value="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" />
+        <option value="$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx" />
+        <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" />
+        <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx" />
+        <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx" />
       </list>
     </option>
   </component>
@@ -230,15 +221,7 @@
               <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
-              <item name="Sections" type="462c0819:PsiDirectoryNode" />
+              <item name="AboutUs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -285,12 +268,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563654468499</updated>
-      <workItem from="1563654469921" duration="22209000" />
+      <workItem from="1563654469921" duration="23265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22209000" />
+    <option name="totallyTimeSpent" value="23265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -389,27 +372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-835">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/AboutUs/Sections/WorkSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1330">
           <caret line="102" column="15" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,16 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="53" column="65" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
-          <folding>
-            <element signature="e#753#814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -591,25 +547,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx">
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.5c46cdb7.chunk.js.map">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#626#652#0" expanded="true" />
-            <element signature="e#890#951#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="167">
+          <caret column="431225" selection-start-column="431225" selection-end-column="431225" />
         </state>
       </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
+    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="102" column="111" selection-start-line="102" selection-start-column="111" selection-end-line="102" selection-end-column="111" />
+        <state relative-caret-position="326">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#753#814#0" expanded="true" />
             <element signature="e#858#920#0" expanded="true" />
           </folding>
         </state>
@@ -627,21 +578,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/main.5c46cdb7.chunk.js.map">
+    <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret column="431225" selection-start-column="431225" selection-end-column="431225" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        <state>
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#626#652#0" expanded="true" />
+            <element signature="e#890#951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+          <folding>
+            <element signature="e#939#1001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="76" column="19" lean-forward="true" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="96" column="59" selection-start-line="96" selection-start-column="59" selection-end-line="96" selection-end-column="59" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#753#814#0" expanded="true" />
             <element signature="e#858#920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <folding>
+            <element signature="e#753#814#0" expanded="true" />
           </folding>
         </state>
       </provider>

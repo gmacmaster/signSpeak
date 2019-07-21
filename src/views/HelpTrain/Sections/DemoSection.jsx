@@ -39,7 +39,26 @@ class WorkSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem cs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Demo:</h2>
+            <h2 className={classes.title}>The Process</h2>
+            <p className={classes.description}>
+              Training a computer to be able to recognize sign language
+              is no easy task. We need your help train our model. What this
+              means is that we need people who know sign language to help!
+              It's super simple and doesn't take long at all. Want to see
+              the model in action? Click <a href="https://gmacmaster.github.io/visualizeModel/demo/" target="_blank">here</a>
+            </p>
+            <p className={classes.description}>
+              You will be walked through a series of signs to preform. With each sign
+              you will be told what to sign and given a picture of what the sign looks like.
+              When your are ready you will click the "Start" button.  A countdown will then appear.
+              During this time start preforming the sign. You will then see a signal the camera has
+              started recording. For the next <strong>10 seconds</strong> it is important to keep signing.
+              After the time has finished you will see a notification the time has ended. You will then
+              see a prompt to redo the sign or move on. We have about ENTER_NUMBER_OF_SIGNS signs you can
+              do, but you may click finish at any time. The last step is to then <strong>email</strong>
+              the downloaded file to <strong>ENTER_EMAIL</strong>
+            </p>
+            <h3 className={classes.title}>Here is a quick demo</h3>
             <div className="iframe-container">
               <iframe src="//www.youtube.com/embed/CIjXUg1s5gc" allowFullScreen/>
             </div>
