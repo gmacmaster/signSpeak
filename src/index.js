@@ -18,7 +18,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.7.0";
 
@@ -33,15 +33,15 @@ import LoginPage from "views/LoginPage/LoginPage.jsx";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={hist}>
+  <HashRouter history={hist}>
     <Switch>
-      <Route path="/signSpeak/aboutUs" component={AboutUs} />
-      <Route path="/signSpeak/components" component={Components} />
-      <Route path="/signSpeak/helpTrain" component={HelpTrain} />
-      <Route path="/signSpeak/login-page" component={LoginPage} />
-      <Route path="/signSpeak/profile-page" component={ProfilePage} />
+      <Route path="/aboutUs" component={AboutUs} />
+      <Route path="/components" component={Components} />
+      <Route path="/helpTrain" component={HelpTrain} />
+      <Route path="/login-page" component={LoginPage} />
+      <Route path="/profile-page" component={ProfilePage} />
       <Route path="/" component={LandingPage} />
     </Switch>
-  </Router>,
+  </HashRouter>,
   document.getElementById("root")
 );

@@ -61,13 +61,13 @@ function HeaderLinks({ ...props }) {
               Home
             </a>,
             <a
-              href="/signSpeak/helpTrain"
+              href="/helpTrain"
               className={classes.dropdownLink}
             >
               Help Train Our Model!
             </a>,
             <a
-              href="/signSpeak/aboutUs"
+              href="/aboutUs"
               className={classes.dropdownLink}
             >
               About US
