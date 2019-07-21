@@ -37,12 +37,28 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
+import DemoSection from "./Sections/DemoSection.jsx";
 import ProductSection from "./Sections/ProductSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
 const dashboardRoutes = [];
 
 class HelpTrain extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      showTrainingSection: false,
+      showHelpSection: true
+    };
+    this.showHelp = this.showHelp.bind(this);
+    this.startTraining = this.startTraining.bind(this);
+  }
+  startTraining(){
+    this.setState({showTrainingSection: true, showHelpSection: false})
+  }
+  showHelp(){
+    this.setState({showHelpSection: true})
+  }
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -54,7 +70,7 @@ class HelpTrain extends React.Component {
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
-            height: 400,
+            height: 100,
             color: "white"
           }}
           {...rest}
@@ -71,7 +87,6 @@ class HelpTrain extends React.Component {
                   to us, you will be making a great contribution to the project.
                   We greatly appreciate your help.
                 </h4>
-                <br />
               </GridItem>
             </GridContainer>
           </div>
@@ -79,7 +94,8 @@ class HelpTrain extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <ProductSection />
-            <WorkSection />
+              {this.state.showHelpSection ? <DemoSection startTraining={this.startTraining} trainingVisible={this.state.showTrainingSection}/>: null }
+              {this.state.showTrainingSection ? <WorkSection showHelp={this.showHelp} helpVisible={this.state.showHelpSection}/>: null }
           </div>
         </div>
         <Footer />

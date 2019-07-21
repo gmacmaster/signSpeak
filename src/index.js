@@ -36,7 +36,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/aboutUs" component={AboutUs} />
-      <Route path="/component" component={Components} />
+      <Route path="/components" component={Components} />
       <Route path="/helpTrain" component={HelpTrain} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/profile-page" component={ProfilePage} />

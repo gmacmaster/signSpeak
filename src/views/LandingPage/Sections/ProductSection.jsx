@@ -67,7 +67,7 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Live Translation"
-                description="Access live translations through your browser on on your phone with AI. Our computer vision model has been trained to recognize {number of signs} signs on thousands of images."
+                description="Access live translations through your browser or on your phone with AI. Our computer vision model has been trained to recognize {number of signs} signs on thousands of images."
                 icon={Videocam}
                 iconColor="info"
                 vertical

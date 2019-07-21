@@ -26,6 +26,10 @@ const teamStyle = {
     padding: "70px 0",
     textAlign: "center"
   },
+  demoSection: {
+    textAlign: "center",
+    paddingBottom: '70px'
+  },
   title: {
     ...title,
     marginBottom: "1rem",

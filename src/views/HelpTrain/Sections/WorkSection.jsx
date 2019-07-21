@@ -20,6 +20,10 @@ import React from "react";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import './custom.css';
+
+// handtrack.js
+import * as handTrack from 'handtrackjs';
 
 // @material-ui/icons
 
@@ -28,34 +32,95 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 
+const modelParams = {
+  flipHorizontal: true,   // flip e.g for video
+  imageScaleFactor: 0.7,  // reduce input image size for gains in speed.
+  maxNumBoxes: 20,        // maximum number of boxes to detect
+  iouThreshold: 0.5,      // ioU threshold for non-max suppression
+  scoreThreshold: 0.79,    // confidence threshold for predictions.
+};
+
 class WorkSection extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      loadingModel: true
+    }
+  }
+  componentDidMount() {
+    console.log('component mounted');
+    navigator.getUserMedia = navigator.getUserMedia ||
+        navigator.webkitGetUserMedia ||
+        navigator.mozGerUserMedia ||
+        navigator.msGetUserMedia;
+    // Get html elements
+    const canvas = document.querySelector('#canvas');
+    const video = document.querySelector('#video');
+    const context = canvas.getContext('2d');
+    let model;
+
+    // eslint-disable-next-line no-undef
+    handTrack.startVideo(video).then(status => {
+      console.log(status);
+      if(status){
+        navigator.getUserMedia({video: {}}, stream =>{
+              video.srcObject = stream;
+              setInterval(runDetection, 1000)
+            },
+            error => {
+              console.log(error);
+            })
+      }
+    });
+
+    function runDetection(){
+      model.detect(video).then(predictions =>{
+        console.log(predictions);
+      })
+    }
+
+    // eslint-disable-next-line no-undef
+    handTrack.load(modelParams).then(lmodel => {
+      this.setState({loadingModel: false})
+      model = lmodel
+    });
+  }
+
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.section}>
-        <GridContainer justify="center">
-          <GridItem cs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Help Us Improve!</h2>
-            <h4 className={classes.description}>
-              Training a computer to be able to recognize sign language
-              is no easy task. We need your help train our model. What this
-              means is that we need people who know sign language to help!
-              It's super simple and doesn't take long at all.
-            </h4>
-            <h3 className={classes.title}>Click the button below to start!</h3>
-            <GridContainer>
-              <GridItem
-                xs={12}
-                sm={12}
-                md={4}
-                className={classes.textCenter + ' ' + classes.autoMargin}
-              >
-                <Button color="primary" href='/helpTrain'>Click Here!</Button>
-              </GridItem>
-            </GridContainer>
+        <h2 className={classes.title}>Help Us Improve!</h2>
+        <h4 className={classes.description}>
+          Training a computer to be able to recognize sign language
+          is no easy task. We need your help train our model. What this
+          means is that we need people who know sign language to help!
+          It's super simple and doesn't take long at all. Want to see
+          the model in action? Click <a href="https://gmacmaster.github.io/visualizeModel/demo/">here</a>
+        </h4>
+        {this.state.loadingModel ?
+            <React.Fragment>
+              <h3 className={classes.title}>Loading Model:</h3>
+              <div className="centeredText" style={{textAlign: 'center'}}>
+                <CircularProgress />
+              </div>
+            </React.Fragment> : null}
+        <div className="video-container">
+          <video id='video'/>
+          <canvas id='canvas'/>
+        </div>
+        <GridContainer>
+          <GridItem
+            xs={12}
+            sm={12}
+            md={4}
+            className={classes.textCenter + ' ' + classes.autoMargin}
+          >
+            {this.props.helpVisible ? null : <Button color="primary" onClick={this.props.showHelp}>Show Demo</Button>}
           </GridItem>
         </GridContainer>
       </div>
@@ -64,7 +129,8 @@ class WorkSection extends React.Component {
 }
 
 WorkSection.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  helpVisible: PropTypes.bool
 };
 
 export default withStyles(workStyle)(WorkSection);

@@ -23,11 +23,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
 import AccessibilityNew from "@material-ui/icons/AccessibilityNew";
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 import School from "@material-ui/icons/School";
 import Videocam from "@material-ui/icons/Videocam";
+import Lock from "@material-ui/icons/Lock";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -40,45 +38,23 @@ class ProductSection extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.section}>
-        <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Coming Soon: Translate in Live Time!</h2>
-            <h5 className={classes.description}>
-              Our computer vision model allows users to translate sign language
-              in real time. Whether you're chatting with your friends, ordering a
-              coffee, or teaching someone a new skill, we help bring understanding
-              to everyone. At this time we are still building out our model. In the
-              mean time we need help training our model! Please click{' '}
-              <a href="/helpTrain">here</a> if you want to help.
-            </h5>
-          </GridItem>
-        </GridContainer>
         <div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={6}>
               <InfoArea
-                title="Accessibility"
-                description="Making conversation accessible for everyone by allowing anyone to understand sign language."
-                icon={AccessibilityNew}
-                iconColor="success"
+                title="Security"
+                description="No identifying information is stored with your photos and we will not share them with anyone. We promise."
+                icon={Lock}
+                iconColor="danger"
                 vertical
               />
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={6}>
               <InfoArea
-                title="Live Translation"
-                description="Access live translations through your browser on on your phone with AI. Our computer vision model has been trained to recognize {number of signs} signs on thousands of images."
+                title="Live Gesture Recognition"
+                description="We use existing computer vision models to identify your hands and label the photos for training of our own models"
                 icon={Videocam}
                 iconColor="info"
-                vertical
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
-              <InfoArea
-                title="Learning"
-                description="As our app grows, our translations will become more and more accurate as we get more user input, improve our model, and add more signs."
-                icon={School}
-                iconColor="danger"
                 vertical
               />
             </GridItem>
