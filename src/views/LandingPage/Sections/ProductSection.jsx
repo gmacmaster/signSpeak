@@ -49,7 +49,7 @@ class ProductSection extends React.Component {
               coffee, or teaching someone a new skill, we help bring understanding
               to everyone. At this time we are still building out our model. In the
               mean time we need help training our model! Please click{' '}
-              <a href="/helpTrain">here</a> if you want to help.
+              <a href="/#/helpTrain">here</a> if you want to help.
             </h5>
           </GridItem>
         </GridContainer>
