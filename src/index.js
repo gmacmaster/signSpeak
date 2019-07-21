@@ -33,7 +33,7 @@ import LoginPage from "views/LoginPage/LoginPage.jsx";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <HashRouter history={hist} basename={'/'}>
+  <HashRouter basename={'/'}>
     <Switch>
       <Route path="/aboutUs#/" component={AboutUs} />
       <Route path="/components" component={Components} />
