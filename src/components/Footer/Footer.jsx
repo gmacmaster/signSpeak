@@ -53,7 +53,7 @@ function Footer({ ...props }) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="/#/aboutUs"
+                href={process.env.PUBLIC_URL+"/#/aboutUs"}
                 className={classes.block}
               >
                 Blog

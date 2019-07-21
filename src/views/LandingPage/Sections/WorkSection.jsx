@@ -53,7 +53,7 @@ class WorkSection extends React.Component {
                 md={4}
                 className={classes.textCenter + ' ' + classes.autoMargin}
               >
-                <Button color="primary" href='/helpTrain'>Click Here!</Button>
+                <Button color="primary" href={process.env.PUBLIC_URL+'/#/helpTrain'}>Click Here!</Button>
               </GridItem>
             </GridContainer>
           </GridItem>

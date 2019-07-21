@@ -55,19 +55,19 @@ function HeaderLinks({ ...props }) {
               All pages
             </Link>,
             <a
-              href="/"
+              href={process.env.PUBLIC_URL+'/'}
               className={classes.dropdownLink}
             >
               Home
             </a>,
             <a
-              href="/helpTrain"
+              href={process.env.PUBLIC_URL+'/#/helpTrain'}
               className={classes.dropdownLink}
             >
               Help Train Our Model!
             </a>,
             <a
-              href="/aboutUs"
+              href={process.env.PUBLIC_URL+'/#/aboutUS'}
               className={classes.dropdownLink}
             >
               About US
