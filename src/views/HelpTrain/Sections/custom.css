@@ -22,12 +22,12 @@ centeredText {
 
 .video-container {
     position: relative;
-    height: 700px;
+    height: 50vh;
 }
 
-.video-container #video {
+.video-container video {
     border: 0;
-    height: 700px;
+    height: 50vh;
     left: 0;
     position: absolute;
     top: 0;

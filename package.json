@@ -22,7 +22,8 @@
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1",
     "react-slick": "0.24.0",
-    "react-swipeable-views": "0.13.3"
+    "react-swipeable-views": "0.13.3",
+    "react-webcam": "^1.1.1"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",

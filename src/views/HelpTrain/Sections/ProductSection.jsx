@@ -37,7 +37,7 @@ class ProductSection extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
+      <div className={classes.section} style={{paddingBottom: '0px'}}>
         <div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
