@@ -50,7 +50,7 @@ class TeamSection extends React.Component {
     );
     return (
       <div className={classes.section}>
-        <h2 className={classes.title}>Here is our team</h2>
+        <h2 className={classes.title}>Our Team</h2>
         <div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={4} className={classes.centered}>
@@ -66,8 +66,8 @@ class TeamSection extends React.Component {
                 <CardBody>
                   <p className={classes.description}>
                     Gordon is a senior computer science major at the University of Vermont.
-                    As a full stack engineer he has interned for <a href="https://tesla.com">Tesla</a> in Fremont, CA
-                    and <a href="https://mamhousing.com/pmam.html">Pennsylvania Multifamily Asset Managers</a>. Gordon
+                    As a full stack engineer he has interned for <a href="https://tesla.com" target="_blank">Tesla</a> in Fremont, CA
+                    and <a href="https://mamhousing.com/pmam.html" target="_blank">Pennsylvania Multifamily Asset Managers</a>. Gordon
                     brings experience in web apps, backend systems, and machine learning.
                   </p>
                 </CardBody>

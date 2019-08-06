@@ -43,6 +43,14 @@ import Button from "components/CustomButtons/Button.jsx";
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
+import LocationOn from "@material-ui/core/SvgIcon/SvgIcon";
+import Card from "components/Card/Card.jsx";
+import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
+import imagec1 from "assets/img/bg.jpg";
+import imagec2 from "assets/img/bg2.jpg";
+import imagec3 from "assets/img/bg3.jpg";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const modelParams = {
   flipHorizontal: true,   // flip e.g for video
@@ -56,7 +64,7 @@ class WorkSection extends React.Component {
   setRef = webcam => {
     this.webcam = webcam;
   };
-  testModel = null;
+  model = null;
   canvas = null;
   video = null;
 
@@ -67,7 +75,7 @@ class WorkSection extends React.Component {
     // eslint-disable-next-line no-undef
     handTrack.load(modelParams).then(lmodel => {
       this.setState({loadingModel: false});
-      this.testModel = lmodel;
+      this.model = lmodel;
     });
 
     const SignsLeft = Signs.default;
@@ -79,16 +87,34 @@ class WorkSection extends React.Component {
       SignsLeft,
       CurrentSign,
       trainingStarted: false,
+      seconds: 5,
+      trainingSeconds: 10,
+      showTimer: false,
+      labeledImages: [],
     };
-
+    this.timer = 0;
+    this.traningTimer = 0;
+    this.startTimer = this.startTimer.bind(this);
+    this.startTrainingTimer = this.startTrainingTimer.bind(this);
+    this.countDown = this.countDown.bind(this);
+    this.countDownTrainingTimer = this.countDownTrainingTimer.bind(this);
     this.startTraining = this.startTraining.bind(this);
   }
 
   runDetection(content){
-    if(this.testModel){
-      this.testModel.detect(content).then(predictions =>{
+    if(this.model){
+      this.model.detect(content).then(predictions =>{
         console.log(predictions);
         document.getElementById('imageToRun').remove();
+        if(predictions.length > 0){
+            const canvas = document.getElementById('canvas');
+            const context = canvas.getContext('2d');
+            this.model.renderPredictions(predictions, canvas, context, content)
+            const newImgSrc = canvas.toDataURL();
+            const {labeledImages} = this.state;
+            labeledImages.push(newImgSrc);
+            this.setState({labeledImages});
+        }
       })
     } else {
       console.log('Model not loaded yet')
@@ -133,25 +159,62 @@ class WorkSection extends React.Component {
     handTrack.load(modelParams).then(lmodel => {
       this.setState({loadingModel: false});
       model = lmodel;
-      this.testModel = lmodel;
+      this.model = lmodel;
     });
   }*/
 
+  startTimer() {
+    if (this.timer == 0 && this.state.seconds > 0) {
+      this.timer = setInterval(this.countDown, 1000);
+    }
+  }
+
+  startTrainingTimer() {
+    if (this.traningTimer == 0 && this.state.trainingSeconds > 0) {
+      this.traningTimer = setInterval(this.countDownTrainingTimer, 1000);
+    }
+  }
+
+  countDown() {
+    let seconds = this.state.seconds - 1;
+    this.setState({
+      seconds: seconds,
+    });
+    if (seconds == 0) {
+      clearInterval(this.timer);
+      this.setState({seconds: 5, showTimer: false, trainingStarted: true}, () => {
+        this.startTrainingTimer();
+      });
+      this.timer = 0;
+    }
+  }
+
+  // 10 Second timer for training
+  countDownTrainingTimer() {
+    let seconds = this.state.trainingSeconds - 1;
+    this.capture();
+    this.setState({
+      trainingSeconds: seconds,
+    });
+    if (seconds == 0) {
+      clearInterval(this.traningTimer);
+      this.setState({trainingSeconds: 10, trainingStarted: false})
+      this.traningTimer = 0;
+    }
+  }
+
   startTraining(){
     console.log('Start training');
+    this.setState({showTimer: true}, () => {this.startTimer()})
   }
 
   capture = () => {
     const obj =this;
     const imageSrc = this.webcam.getScreenshot();
     const image = document.createElement("IMG");
-    const a = document.createElement("A");
-    a.href=imageSrc;
-    a.download='test.jpeg';
-    a.innerText='test';
-    document.getElementById('imageContainer').appendChild(a);
     image.src = imageSrc;
     image.id = 'imageToRun';
+    image.style.display = 'none';
     document.getElementById('imageContainer').appendChild(image);
     setTimeout(function () {
       obj.runDetection(document.getElementById('imageToRun'));
@@ -159,6 +222,14 @@ class WorkSection extends React.Component {
   };
 
   render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false
+    };
     const videoConstraints = {
       width: 1280,
       height: 720,
@@ -213,9 +284,8 @@ class WorkSection extends React.Component {
             </GridContainer>}
         {/*        <div className="video-container">
           <video id='video'/>
-          <canvas id='canvas'/>
         </div>*/}
-        {!this.state.trainingStarted ?
+        {this.state.showTimer ?
         <GridContainer>
           <GridItem
               xs={12}
@@ -223,7 +293,18 @@ class WorkSection extends React.Component {
               md={12}
               className={classes.textCenter + ' ' + classes.autoMargin}
           >
-            <Button color="success" onClick={this.capture}>Start</Button>
+          <h1 className={classes.title}>{this.state.seconds}</h1>
+          </GridItem>
+        </GridContainer> : null}
+        {!this.state.trainingStarted && !this.state.loadingModel ?
+        <GridContainer>
+          <GridItem
+              xs={12}
+              sm={12}
+              md={12}
+              className={classes.textCenter + ' ' + classes.autoMargin}
+          >
+            <Button color="success" onClick={this.startTraining}>Start</Button>
           </GridItem>
         </GridContainer> : null}
         {this.state.SignsLeft.length > 0 ?
@@ -258,6 +339,20 @@ class WorkSection extends React.Component {
           </GridItem>
         </GridContainer>
         <div id="imageContainer" />
+        <canvas id='canvas' hidden/>
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
+              <Card carousel>
+                <Carousel className={'canvasCarousel'} infiniteLoop>
+                    {this.state.labeledImages.map((imgSrc, index) => (
+                        <div key={index}><img src={imgSrc} alt={'labeledImage-' + index}/></div>
+                    ))}
+                </Carousel>
+              </Card>
+            </GridItem>
+          </GridContainer>
+        </div>
       </div>
     );
   }
