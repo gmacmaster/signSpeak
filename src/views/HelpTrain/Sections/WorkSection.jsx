@@ -83,6 +83,7 @@ class WorkSection extends React.Component {
     const CurrentSign = SignsLeft[RandomIndex];
     SignsLeft.splice(RandomIndex, 1);
     this.state = {
+      userHasStarted: false,
       loadingModel: true,
       SignsLeft,
       CurrentSign,
@@ -91,6 +92,12 @@ class WorkSection extends React.Component {
       trainingSeconds: 10,
       showTimer: false,
       labeledImages: [],
+      imageSrc: [],
+      currentSignImageSrc: [],
+      completedPredictions: [],
+      currentSignPredictions: [],
+      showCamera: true,
+      carouselIndex: 0,
     };
     this.timer = 0;
     this.traningTimer = 0;
@@ -99,26 +106,112 @@ class WorkSection extends React.Component {
     this.countDown = this.countDown.bind(this);
     this.countDownTrainingTimer = this.countDownTrainingTimer.bind(this);
     this.startTraining = this.startTraining.bind(this);
+    this.removeImage = this.removeImage.bind(this);
+    this.redoSign = this.redoSign.bind(this);
+    this.nextSign = this.nextSign.bind(this);
+    this.renderPredictions = this.renderPredictions.bind(this);
+    this.carouselSwitch = this.carouselSwitch.bind(this);
+    this.movePrediction = this.movePrediction.bind(this);
+  }
+
+  redoSign(){
+      // eslint-disable-next-line no-restricted-globals
+      const confirmRedo = confirm('Are you sure you want to redo this sign? All data for THIS sign will be lost');
+      if(confirmRedo) {
+        this.setState({
+            labeledImages: [],
+            currentSignImageSrc: [],
+            currentSignPredictions: []
+        }, () => {this.startTraining()});
+    }
+  }
+
+  nextSign(){
+      // eslint-disable-next-line no-restricted-globals
+      const confirmNext = confirm('Ready to move on? You will no longer be able to edit the signs for this sign');
+      if(confirmNext) {
+        console.log(this.state.CurrentSign);
+        const { SignsLeft, currentSignImageSrc, currentSignPredictions } = this.state;
+          const RandomIndex = Math.floor(Math.random()*SignsLeft.length);
+          const newSign = SignsLeft[RandomIndex];
+          SignsLeft.splice(RandomIndex, 1);
+          this.setState({
+              SignsLeft,
+              CurrentSign: newSign,
+              labeledImages: [],
+              imageSrc: this.state.imageSrc.concat(currentSignImageSrc),
+              currentSignImageSrc: [],
+              currentSignPredictions: [],
+              completedPredictions: this.state.completedPredictions.concat(currentSignPredictions),
+              userHasStarted: false,
+              showCamera: true,
+          })
+    }
+  }
+
+  renderPredictions(predictions, content){
+      const canvas = document.getElementById('canvas');
+      const context = canvas.getContext('2d');
+      this.model.renderPredictions(predictions, canvas, context, content);
+      const newImgSrc = canvas.toDataURL();
+      return newImgSrc;
   }
 
   runDetection(content){
     if(this.model){
       this.model.detect(content).then(predictions =>{
-        console.log(predictions);
         document.getElementById('imageToRun').remove();
-        if(predictions.length > 0){
-            const canvas = document.getElementById('canvas');
-            const context = canvas.getContext('2d');
-            this.model.renderPredictions(predictions, canvas, context, content)
-            const newImgSrc = canvas.toDataURL();
-            const {labeledImages} = this.state;
+        if(predictions.length === 1){
+            const {labeledImages, currentSignPredictions} = this.state;
+            const newImgSrc = this.renderPredictions(predictions, content);
             labeledImages.push(newImgSrc);
-            this.setState({labeledImages});
+            currentSignPredictions.push(predictions);
+            this.setState({labeledImages, currentSignPredictions});
         }
       })
     } else {
       console.log('Model not loaded yet')
     }
+  }
+
+  movePrediction(direction) {
+      console.log(this.state);
+      const { carouselIndex, currentSignPredictions, currentSignImageSrc, labeledImages } = this.state;
+      const currentPrediction = currentSignPredictions[carouselIndex];
+      console.log(currentPrediction[0].bbox[1]);
+      switch (direction) {
+        case 'up':
+          currentPrediction[0].bbox[1] = currentPrediction[0].bbox[1] - 10;
+            break;
+        case 'down':
+          currentPrediction[0].bbox[1] = currentPrediction[0].bbox[1] + 10;
+          break;
+        case 'left':
+          currentPrediction[0].bbox[0] = currentPrediction[0].bbox[0] - 10;
+          break;
+        case 'right':
+          currentPrediction[0].bbox[0] = currentPrediction[0].bbox[0] + 10;
+          break;
+        case 'bigger':
+          currentPrediction[0].bbox[2] = currentPrediction[0].bbox[2] * 1.05;
+          currentPrediction[0].bbox[3] = currentPrediction[0].bbox[3] * 1.05;
+          break;
+        default:
+          currentPrediction[0].bbox[2] = currentPrediction[0].bbox[2] * .95;
+          currentPrediction[0].bbox[3] = currentPrediction[0].bbox[3] * .95;
+          break;
+      }
+      currentSignPredictions[carouselIndex] = currentPrediction;
+      const image = document.createElement("IMG");
+      image.src = currentSignImageSrc[carouselIndex];
+      image.id = 'imageToRun';
+      image.style.display = 'none';
+      document.getElementById('imageContainer').appendChild(image);
+      const newImgSrc = this.renderPredictions(currentSignPredictions[carouselIndex], document.getElementById('imageToRun'));
+      document.getElementById('imageToRun').remove();
+      console.log(newImgSrc);
+      labeledImages[carouselIndex] = newImgSrc;
+      this.setState({carouselIndex, currentSignPredictions, labeledImages})
   }
 
  /* componentDidMount() {
@@ -182,7 +275,7 @@ class WorkSection extends React.Component {
     });
     if (seconds == 0) {
       clearInterval(this.timer);
-      this.setState({seconds: 5, showTimer: false, trainingStarted: true}, () => {
+      this.setState({seconds: 5, showTimer: false, trainingStarted: true, userHasStarted: true}, () => {
         this.startTrainingTimer();
       });
       this.timer = 0;
@@ -198,19 +291,22 @@ class WorkSection extends React.Component {
     });
     if (seconds == 0) {
       clearInterval(this.traningTimer);
-      this.setState({trainingSeconds: 10, trainingStarted: false})
+      this.setState({trainingSeconds: 10, trainingStarted: false, showCamera: false});
       this.traningTimer = 0;
     }
   }
 
   startTraining(){
     console.log('Start training');
-    this.setState({showTimer: true}, () => {this.startTimer()})
+    this.setState({showTimer: true, showCamera: true}, () => {this.startTimer()})
   }
 
   capture = () => {
     const obj =this;
     const imageSrc = this.webcam.getScreenshot();
+    const { currentSignImageSrc } = this.state;
+    currentSignImageSrc.push(imageSrc);
+    this.setState({currentSignImageSrc});
     const image = document.createElement("IMG");
     image.src = imageSrc;
     image.id = 'imageToRun';
@@ -221,7 +317,18 @@ class WorkSection extends React.Component {
     });
   };
 
+  carouselSwitch(index){
+    this.setState({carouselIndex: index})
+  }
+
+  removeImage(){
+    const {labeledImages, carouselIndex} = this.state;
+    labeledImages.splice(carouselIndex, 1);
+    this.setState({labeledImages, carouselIndex: 0});
+  }
+
   render() {
+      console.log(this.state);
     const settings = {
       dots: true,
       infinite: true,
@@ -271,6 +378,7 @@ class WorkSection extends React.Component {
                   md={12}
                   className={classes.textCenter + ' ' + classes.autoMargin}
               >
+              {this.state.showCamera?
                 <div className="video-container">
                   <Webcam
                     audio={false}
@@ -279,12 +387,29 @@ class WorkSection extends React.Component {
                     screenshotQuality={1}
                     videoConstraints={videoConstraints}
                   />
-                </div>
+                </div> :
+                  (this.state.labeledImages.length > 0 ? <Card carousel>
+                  Please Review these photos.
+                  <Carousel selectedItem={this.state.carouselIndex} className={'canvasCarousel'} infiniteLoop onChange={this.carouselSwitch}>
+                  {this.state.labeledImages.map((imgSrc, index) => (
+                      <div key={index}><img src={imgSrc} alt={'labeledImage-' + index}/></div>
+                  ))}
+                </Carousel>
+                  <div>
+                    <Button color="info" onClick={() => this.movePrediction('up')} size="sm">Up</Button><br/>
+                    <Button color="info" onClick={() => this.movePrediction('left')} size="sm">Left</Button>
+                    <Button color="info" onClick={() => this.movePrediction('right')} size="sm">Right</Button><br/>
+                    <Button color="info" onClick={() => this.movePrediction('down')} size="sm">Down</Button>
+                  </div>
+                  <div>
+                    <Button color="info" onClick={() => this.movePrediction('smaller')} size="sm">Smaller</Button>
+                    <Button color="info" onClick={() => this.movePrediction('bigger')} size="sm">Bigger</Button>
+                  </div>
+                  <div><Button color="danger" onClick={this.removeImage} size="sm" className="removeButton">Remove</Button></div>
+                  </Card> : null)
+              }
               </GridItem>
             </GridContainer>}
-        {/*        <div className="video-container">
-          <video id='video'/>
-        </div>*/}
         {this.state.showTimer ?
         <GridContainer>
           <GridItem
@@ -296,7 +421,7 @@ class WorkSection extends React.Component {
           <h1 className={classes.title}>{this.state.seconds}</h1>
           </GridItem>
         </GridContainer> : null}
-        {!this.state.trainingStarted && !this.state.loadingModel ?
+        {!this.state.trainingStarted && !this.state.loadingModel && !this.state.userHasStarted ?
         <GridContainer>
           <GridItem
               xs={12}
@@ -307,6 +432,18 @@ class WorkSection extends React.Component {
             <Button color="success" onClick={this.startTraining}>Start</Button>
           </GridItem>
         </GridContainer> : null}
+        {!this.state.trainingStarted && !this.state.loadingModel && this.state.userHasStarted ?
+          <GridContainer>
+              <GridItem
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  className={classes.textCenter + ' ' + classes.autoMargin}
+              >
+                  <Button color="warning" onClick={this.redoSign}>Redo Sign</Button>
+                  <Button color="success" onClick={this.nextSign}>Next Sign</Button>
+              </GridItem>
+          </GridContainer> : null}
         {this.state.SignsLeft.length > 0 ?
         <GridContainer>
           <GridItem
@@ -335,24 +472,11 @@ class WorkSection extends React.Component {
               md={6}
               className={classes.textCenter + ' ' + classes.autoMargin}
           >
-            <Button color="danger" onClick={this.props.showHelp}>Finish</Button>
+            <Button color="warning" onClick={this.props.showHelp}>Finish</Button>
           </GridItem>
         </GridContainer>
         <div id="imageContainer" />
         <canvas id='canvas' hidden/>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
-              <Card carousel>
-                <Carousel className={'canvasCarousel'} infiniteLoop>
-                    {this.state.labeledImages.map((imgSrc, index) => (
-                        <div key={index}><img src={imgSrc} alt={'labeledImage-' + index}/></div>
-                    ))}
-                </Carousel>
-              </Card>
-            </GridItem>
-          </GridContainer>
-        </div>
       </div>
     );
   }

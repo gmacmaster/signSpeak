@@ -2,6 +2,26 @@ centeredText {
     text-align: center !important;
 }
 
+.removeButton {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.topDirection {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.rightDirection {
+    width: 25%;
+    float: right;
+}
+
+.leftDirection {
+    width: 25%;
+    float: left;
+}
+
 .iframe-container {
     overflow: hidden;
     /*
