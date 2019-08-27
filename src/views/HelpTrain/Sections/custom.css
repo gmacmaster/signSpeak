@@ -21,6 +21,10 @@ centeredText {
     width: 25%;
     float: left;
 }
+.noMarginTopBottom {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
 
 .iframe-container {
     overflow: hidden;
@@ -41,6 +45,7 @@ centeredText {
 }
 
 .video-container {
+    margin-top: 20px;
     position: relative;
     height: 50vh;
 }

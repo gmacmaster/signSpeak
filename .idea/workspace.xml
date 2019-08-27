@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/HelpTrain/Sections/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/HelpTrain/Sections/custom.css" afterDir="false" />
     </list>
@@ -29,10 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="187">
+              <caret line="58" column="70" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#753#814#0" expanded="true" />
@@ -41,15 +44,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="140" selection-start-line="140" selection-end-line="140" />
+            <state relative-caret-position="866">
+              <caret line="317" column="40" selection-start-line="317" selection-start-column="40" selection-end-line="317" selection-end-column="40" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#753#814#0" expanded="true" />
-                <element signature="e#1036#1098#0" expanded="true" />
+                <element signature="e#685#720#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,22 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="272">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx">
+        <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Utils/Signs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="79" column="22" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="22" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#939#989#0" expanded="true" />
-                <element signature="e#1445#1504#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -82,36 +79,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>href=&quot;/</find>
-      <find>href='/</find>
-      <find>href</find>
-      <find>sign</find>
-      <find>href={</find>
-      <find>&quot;</find>
-      <find>}</find>
-      <find>&quot;URL&quot;: &quot;&quot;</find>
-      <find>h1</find>
-      <find>show</find>
-      <find>model</find>
-      <find>testmodel</find>
-      <find>Carousel</find>
-      <find>imageContainer</find>
-      <find>Pennsylvania Multifamily Asset Managers</find>
-      <find>canvases</find>
-      <find>size</find>
-      <find>small</find>
-      <find>carouselSwitch</find>
       <find>webcam</find>
       <find>this</find>
       <find>runde</find>
-      <find>currentSignImageSrc</find>
       <find>renderPredictions</find>
-      <find>runDetection</find>
       <find>trainingStarted</find>
       <find>currentSignPredictions</find>
       <find>predictions:</find>
       <find>this.state.pred</find>
       <find>predictions</find>
+      <find>settings</find>
+      <find>10</find>
+      <find>5</find>
+      <find>up</find>
+      <find>video-container</find>
+      <find>h1</find>
+      <find>confirm</find>
+      <find>runDetection</find>
+      <find>currentSignImageSrc</find>
+      <find>currentSign</find>
+      <find>SignName</find>
+      <find>CurrentSign</find>
+      <find>signname</find>
+      <find>margin: 0</find>
+      <find>finish</find>
+      <find>trainingSeconds</find>
+      <find>.jpg</find>
+      <find>cam</find>
+      <find>videoConstraints</find>
+      <find>console</find>
+      <find>seconds</find>
     </findStrings>
     <replaceStrings>
       <replace>Sign</replace>
@@ -148,21 +145,21 @@
         <option value="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" />
         <option value="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx" />
-        <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/ProductSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" />
-        <option value="$PROJECT_DIR$/src/views/HelpTrain/Utils/Signs.json" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/HelpTrain.jsx" />
+        <option value="$PROJECT_DIR$/src/views/HelpTrain/Utils/Signs.json" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/custom.css" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx" />
+        <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="2" />
-    <option name="width" value="1934" />
-    <option name="height" value="1035" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -170,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,19 +190,21 @@
               <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="AboutUs" type="462c0819:PsiDirectoryNode" />
+              <item name="HelpTrain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="HelpTrain" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,17 +250,19 @@
       <updated>1563654468499</updated>
       <workItem from="1563654469921" duration="35216000" />
       <workItem from="1564366983824" duration="32753000" />
-      <workItem from="1565885478065" duration="599000" />
+      <workItem from="1565885478065" duration="8698000" />
+      <workItem from="1566861429979" duration="2740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68568000" />
+    <option name="totallyTimeSpent" value="79407000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="1" width="1547" height="868" extended-state="1" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16821192" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16787839" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -277,7 +277,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21195652" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34986594" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -558,13 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Utils/Signs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/img/faces/Gordon-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -614,6 +607,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="79" column="22" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#939#989#0" expanded="true" />
+            <element signature="e#1445#1504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/inspector.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="1098" column="12" selection-start-line="1098" selection-start-column="12" selection-end-line="1098" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/ProductSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -624,43 +636,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#753#814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="272">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx">
+    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Utils/Signs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="79" column="22" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#939#989#0" expanded="true" />
-            <element signature="e#1445#1504#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        <state relative-caret-position="866">
+          <caret line="317" column="40" selection-start-line="317" selection-start-column="40" selection-end-line="317" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#685#720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/DemoSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="58" column="70" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#753#814#0" expanded="true" />
-            <element signature="e#1036#1098#0" expanded="true" />
           </folding>
         </state>
       </provider>
