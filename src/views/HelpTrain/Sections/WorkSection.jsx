@@ -436,8 +436,8 @@ class WorkSection extends React.Component {
                     <Button color="info" onClick={() => this.movePrediction('down')} size="sm">Down</Button>
                   </div>
                   <div>
-                    <Button color="info" onClick={() => this.movePrediction('smaller')} size="sm">Smaller</Button>
                     <Button color="info" onClick={() => this.movePrediction('bigger')} size="sm">Bigger</Button>
+                    <Button color="info" onClick={() => this.movePrediction('smaller')} size="sm">Smaller</Button>
                   </div>
                   <div><Button color="danger" onClick={this.removeImage} size="sm" className="removeButton">Remove</Button></div>
                   </Card> : null)
@@ -452,7 +452,18 @@ class WorkSection extends React.Component {
               md={12}
               className={classes.textCenter + ' ' + classes.autoMargin}
           >
-          <h1 className={classes.title}>{this.state.seconds}</h1>
+          <h1 className={classes.title}>Starting in: {this.state.seconds}</h1>
+          </GridItem>
+        </GridContainer> : null}
+        {this.state.trainingStarted ?
+        <GridContainer>
+          <GridItem
+              xs={12}
+              sm={12}
+              md={12}
+              className={classes.textCenter + ' ' + classes.autoMargin}
+          >
+          <h1 className={classes.title}>Time left: {this.state.trainingSeconds}</h1>
           </GridItem>
         </GridContainer> : null}
         {!this.state.trainingStarted && !this.state.loadingModel && !this.state.userHasStarted && !this.state.trainingComplete ?

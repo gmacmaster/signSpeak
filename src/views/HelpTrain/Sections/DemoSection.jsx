@@ -58,10 +58,10 @@ class WorkSection extends React.Component {
               do, but you may click finish at any time. The last step is to then <strong>email </strong>
               the downloaded file to <strong>Gordon.MacMaster@uvm.edu</strong>
             </p>
-            <h3 className={classes.title}>Here is a quick demo</h3>
-            <div className="iframe-container">
+            {/*             <h3 className={classes.title}>Here is a quick demo</h3>
+           <div className="iframe-container">
               <iframe src="//www.youtube.com/embed/CIjXUg1s5gc" allowFullScreen/>
-            </div>
+            </div>*/}
             <h3 className={classes.title}>Click the button below to start!</h3>
             <GridContainer>
               <GridItem
