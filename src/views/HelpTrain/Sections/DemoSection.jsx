@@ -54,7 +54,7 @@ class WorkSection extends React.Component {
               During this time start preforming the sign. You will then see a signal the camera has
               started recording. For the next <strong>10 seconds</strong> it is important to keep signing.
               After the time has finished you will see a notification the time has ended. You will then
-              see a prompt to redo the sign or move on. We have about ENTER_NUMBER_OF_SIGNS signs you can
+              see a prompt to redo the sign or move on. We have about 24 letters you can
               do, but you may click finish at any time. The last step is to then <strong>email </strong>
               the downloaded file to <strong>Gordon.MacMaster@uvm.edu</strong>
             </p>
