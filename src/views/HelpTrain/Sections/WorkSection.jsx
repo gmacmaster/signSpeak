@@ -178,6 +178,7 @@ class WorkSection extends React.Component {
             this.setState({});
             const {labeledImages, currentSignPredictions, currentSignImageSrc} = this.state;
             currentSignImageSrc.push(imgSrc);
+            console.log(predictions)
             const newImgSrc = this.renderPredictions(predictions, content);
             labeledImages.push(newImgSrc);
             currentSignPredictions.push(predictions);

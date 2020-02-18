@@ -8,9 +8,13 @@
   "dependencies": {
     "@material-ui/core": "4.1.0",
     "@material-ui/icons": "4.1.0",
+    "@tensorflow/tfjs": "^1.5.2",
+    "axios": "^0.19.0",
     "classnames": "2.2.6",
     "convert-array-to-csv": "^1.0.9",
+    "csvtojson": "^2.0.10",
     "file-saver": "^2.0.2",
+    "fs": "0.0.1-security",
     "gh-pages": "^2.0.1",
     "handtrackjs": "0.0.13",
     "history": "4.9.0",
