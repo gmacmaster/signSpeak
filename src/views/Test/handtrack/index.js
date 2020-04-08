@@ -9,10 +9,8 @@
 
 
 import * as tf from '@tensorflow/tfjs';
-import {loadGraphModel} from '@tensorflow/tfjs-converter';
 
-const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/model.json';
-const basePath = "../models/model/";
+const basePath = "https://cdn.jsdelivr.net/npm/handtrackjs/models/web/";
 
 const defaultParams = {
   flipHorizontal: true,
@@ -40,22 +38,22 @@ export function startVideo(video) {
 
   return new Promise(function (resolve, reject) {
     navigator.mediaDevices
-      .getUserMedia({
-        audio: false,
-        video: {
-          facingMode: "user"
-        }
-      })
-      .then(stream => {
-        window.localStream = stream;
-        video.srcObject = stream;
-        video.onloadedmetadata = () => {
-          video.play();
-          resolve(true)
-        }
-      }).catch(function (err) {
-        resolve(false)
-      });
+        .getUserMedia({
+          audio: false,
+          video: {
+            facingMode: "user"
+          }
+        })
+        .then(stream => {
+          window.localStream = stream;
+          video.srcObject = stream;
+          video.onloadedmetadata = () => {
+            video.play();
+            resolve(true)
+          }
+        }).catch(function (err) {
+      resolve(false)
+    });
   });
 
 }
@@ -80,7 +78,7 @@ export class ObjectDetection {
 
   async load() {
     this.fps = 0;
-    this.model = await loadGraphModel(MODEL_URL);
+    this.model = await tf.loadFrozenModel(this.modelPath, this.weightPath);
 
     // Warmup the model.
     const result = await this.model.executeAsync(tf.zeros([1, 300, 300, 3]));
@@ -97,7 +95,7 @@ export class ObjectDetection {
     const resizedWidth = getValidResolution(this.modelParams.imageScaleFactor, width, this.modelParams.outputStride);
 
     const batched = tf.tidy(() => {
-      const imageTensor = tf.browser.fromPixels(input);
+      const imageTensor = tf.fromPixels(input);
       if (this.modelParams.flipHorizontal) {
         return imageTensor.reverse(1).resizeBilinear([resizedHeight, resizedWidth]).expandDims(0);
       } else {
@@ -106,10 +104,10 @@ export class ObjectDetection {
     });
 
     // const result = await this.model.executeAsync(batched);
-    const selfObj = this;
+    self = this;
     return this.model.executeAsync(batched).then(function (result) {
 
-      console.log(result);
+
       const scores = result[0].dataSync();
       const boxes = result[1].dataSync();
 
@@ -129,11 +127,11 @@ export class ObjectDetection {
           result[1].shape[3]
         ]);
         return tf.image.nonMaxSuppression(
-          boxes2,
-          scores,
-          selfObj.modelParams.maxNumBoxes, // maxNumBoxes
-          selfObj.modelParams.iouThreshold, // iou_threshold
-          selfObj.modelParams.scoreThreshold // score_threshold
+            boxes2,
+            scores,
+            self.modelParams.maxNumBoxes, // maxNumBoxes
+            self.modelParams.iouThreshold, // iou_threshold
+            self.modelParams.scoreThreshold // score_threshold
         )
       });
       const indexes = indexTensor.dataSync();
@@ -141,16 +139,16 @@ export class ObjectDetection {
       // restore previous backend
       tf.setBackend(prevBackend);
 
-      const predictions = selfObj.buildDetectedObjects(
-        width,
-        height,
-        boxes,
-        scores,
-        indexes,
-        classes
+      const predictions = self.buildDetectedObjects(
+          width,
+          height,
+          boxes,
+          scores,
+          indexes,
+          classes
       );
       let timeEnd = Date.now();
-      selfObj.fps = Math.round(1000 / (timeEnd - timeBegin));
+      self.fps = Math.round(1000 / (timeEnd - timeBegin));
 
       return predictions
 
@@ -228,9 +226,9 @@ export class ObjectDetection {
 
       context.stroke();
       context.fillText(
-        predictions[i].score.toFixed(3) + ' ' + " | hand",
-        predictions[i].bbox[0] + 5,
-        predictions[i].bbox[1] > 10 ? predictions[i].bbox[1] - 5 : 10);
+          predictions[i].score.toFixed(3) + ' ' + " | hand",
+          predictions[i].bbox[0] + 5,
+          predictions[i].bbox[1] > 10 ? predictions[i].bbox[1] - 5 : 10);
     }
 
     // Write FPS to top left

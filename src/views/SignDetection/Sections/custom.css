@@ -1,0 +1,60 @@
+centeredText {
+    text-align: center !important;
+}
+
+.removeButton {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.topDirection {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.rightDirection {
+    width: 25%;
+    float: right;
+}
+
+.leftDirection {
+    width: 25%;
+    float: left;
+}
+.noMarginTopBottom {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.iframe-container {
+    overflow: hidden;
+    /*
+    // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+    */
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.video-container {
+    margin-top: 20px;
+    position: relative;
+    height: 50vh;
+}
+
+.video-container video {
+    border: 0;
+    height: 50vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

@@ -26,6 +26,7 @@ import "assets/scss/material-kit-react.scss?v=1.7.0";
 import AboutUs from "views/AboutUs/AboutUs";
 import Components from "views/Components/Components.jsx";
 import HelpTrain from "views/HelpTrain/HelpTrain";
+import SignDetection from "src/views/SignDetection/SignDetection";
 import Test from "views/Test/HelpTrain";
 import ImageChecking from "views/ImageChecking/ImageChecking";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
@@ -43,6 +44,7 @@ ReactDOM.render(
       <Route path="/ImageChecking" component={ImageChecking} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/profile-page" component={ProfilePage} />
+      <Route path="/SignDetection" component={SignDetection} />
       <Route path="/test" component={Test} />
       <Route path="/" component={LandingPage} />
     </Switch>
