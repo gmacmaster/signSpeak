@@ -78,7 +78,8 @@ export class ObjectDetection {
 
   async load() {
     this.fps = 0;
-    this.model = await tf.loadGraphModel(MODEL_URL)
+    this.model = await tf.loadGraphModel(MODEL_URL);
+    console.log(this.model);
 
     // Warmup the model.
     const result = await this.model.executeAsync(tf.zeros([1, 300, 300, 3],'int32'));
