@@ -58,6 +58,12 @@ function HeaderLinks({ ...props }) {
               Home
             </a>,
             <a
+              href={process.env.PUBLIC_URL+'/#/SignDetection'}
+              className={classes.dropdownLink}
+            >
+              Try It Out!
+            </a>,
+            <a
               href={process.env.PUBLIC_URL+'/#/helpTrain'}
               className={classes.dropdownLink}
             >

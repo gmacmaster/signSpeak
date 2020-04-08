@@ -2,18 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/DemoSection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/ProductSection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/TeamSection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignDetection/Utils/Signs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignDetection/handtrack/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/try2/group1-shard1of5.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/try2/group1-shard2of5.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/try2/group1-shard3of5.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/try2/group1-shard4of5.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/try2/group1-shard5of5.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/try2/model.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Test/handtrack/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Test/handtrack/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignDetection/handtrack/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/HelpTrain.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard10of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard11of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard12of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard13of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard1of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard2of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard3of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard4of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard5of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard6of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard7of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard8of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/group1-shard9of13.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Model/model.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Sections/DemoSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Sections/ProductSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Sections/TeamSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Sections/WorkSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Sections/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/Utils/Signs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Test/handtrack/index.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,60 +48,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Test/HelpTrain.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Test/Sections/WorkSection.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="e#685#720#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#607#633#0" expanded="true" />
-                <element signature="e#860#904#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+            <state relative-caret-position="-779">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#939#989#0" expanded="true" />
+                <element signature="e#1445#1498#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="172" column="31" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/SignDetection/handtrack/index.js">
+        <entry file="file://$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="70" />
+            <state relative-caret-position="221">
+              <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,16 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>861537</find>
-      <find>currentsig</find>
-      <find>.url</find>
-      <find>previous</find>
-      <find>signs.</find>
-      <find>predictionImage</find>
-      <find>Narrower</find>
-      <find>predictions</find>
-      <find>taller</find>
-      <find>radio</find>
       <find>showCheckedPredictions</find>
       <find>Radio</find>
       <find>next</find>
@@ -125,7 +130,17 @@
       <find>basePath</find>
       <find>handTrack</find>
       <find>load</find>
+      <find>handtrack</find>
       <find>helptrain</find>
+      <find>help train out model!</find>
+      <find>help</find>
+      <find>SignDetection</find>
+      <find>model.ex</find>
+      <find>fromp</find>
+      <find>executeAsync</find>
+      <find>predictions</find>
+      <find>batched</find>
+      <find>rundete</find>
     </findStrings>
     <replaceStrings>
       <replace>Sign</replace>
@@ -161,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.jsx" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
         <option value="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/ProductSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" />
@@ -181,7 +195,12 @@
         <option value="$PROJECT_DIR$/src/views/Test/Sections/WorkSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/Test/handtrack/index.js" />
         <option value="$PROJECT_DIR$/src/views/SignDetection/HelpTrain.jsx" />
+        <option value="$PROJECT_DIR$/src/views/SignDetection/handtrack/index.js" />
+        <option value="$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" />
+        <option value="$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx" />
+        <option value="$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js" />
       </list>
     </option>
   </component>
@@ -206,6 +225,23 @@
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="firstTry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="try2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,6 +262,13 @@
               <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="SignDetection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -234,15 +277,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="SignDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="handtrack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="SignDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,7 +291,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="editorconfig.notification" value="null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views/SignDetection" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models/try2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -265,11 +300,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gordo\Documents\ML Project\site\models\try2" />
+      <recent name="C:\Users\gordo\Documents\ML Project\site\src\views\SignDetection\model" />
+      <recent name="C:\Users\gordo\Documents\ML Project\site\src\views\SignDetection\signTrack" />
+      <recent name="C:\Users\gordo\Documents\ML Project\site\models\firstTry" />
       <recent name="C:\Users\gordo\Documents\ML Project\site\src\views\SignDetection" />
-      <recent name="C:\Users\gordo\Documents\ML Project\site\src\views" />
-      <recent name="C:\Users\gordo\Documents\ML Project\site\src\views\Test\handtrack" />
-      <recent name="C:\Users\gordo\Documents\ML Project\site\src\views\Test\Model" />
-      <recent name="C:\Users\gordo\Documents\ML Project\site\src\views\ImageChecking\Utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,18 +342,18 @@
       <workItem from="1579284571560" duration="6015000" />
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
-      <workItem from="1586197198794" duration="3136000" />
+      <workItem from="1586197198794" duration="8503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142835000" />
+    <option name="totallyTimeSpent" value="148202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29742235" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29742235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -333,7 +368,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2386059" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27882037" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -364,54 +399,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#858#920#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="4602" column="4" selection-start-line="4602" selection-start-column="4" selection-end-line="4602" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#626#652#0" expanded="true" />
-            <element signature="e#890#951#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-slick/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Components/Sections/SectionCarousel.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="38" selection-start-line="38" selection-end-line="45" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#999#1061#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -449,18 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="687">
           <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="79" column="22" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#939#989#0" expanded="true" />
-            <element signature="e#1445#1504#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,16 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Test/HelpTrain.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@tensorflow/tfjs-converter/dist/src/executor/graph_model.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-799">
@@ -686,16 +651,28 @@
     <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Utils/Signs.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Test/HelpTrain.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-863">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#940#990#0" expanded="true" />
+            <element signature="e#1446#1499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/Test/handtrack/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+        <state relative-caret-position="1115">
+          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/Test/Sections/WorkSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="-3978">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#685#720#0" expanded="true" />
@@ -703,10 +680,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/handtrack/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-779">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#939#989#0" expanded="true" />
+            <element signature="e#1445#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#939#989#0" expanded="true" />
+            <element signature="e#1445#1504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        <state relative-caret-position="286">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="33" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#607#633#0" expanded="true" />
@@ -715,27 +742,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="289">
           <caret line="17" column="10" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/handtrack/index.js">
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="70" />
+        <state relative-caret-position="85">
+          <caret line="172" column="31" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
         </state>
       </provider>
     </entry>

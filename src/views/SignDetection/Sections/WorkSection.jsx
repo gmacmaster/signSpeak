@@ -26,8 +26,8 @@ import { saveAs } from 'file-saver';
 import withStyles from "@material-ui/core/styles/withStyles";
 import './custom.css';
 
-// handtrack.js
-import * as handTrack from 'handtrackjs';
+// signTrack.js
+import * as handTrack from '../signTrack';
 
 //WebCam
 import Webcam from "react-webcam";
