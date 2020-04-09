@@ -2,43 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/try10/group1-shard1of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try10/group1-shard2of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try10/group1-shard3of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try10/group1-shard4of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try10/group1-shard5of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try10/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try11/group1-shard1of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try11/group1-shard2of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try11/group1-shard3of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try11/group1-shard4of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try11/group1-shard5of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try11/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try12/group1-shard1of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try12/group1-shard2of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try12/group1-shard3of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try12/group1-shard4of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try12/group1-shard5of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try12/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try13/group1-shard1of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try13/group1-shard2of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try13/group1-shard3of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try13/group1-shard4of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try13/group1-shard5of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try13/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try14/group1-shard1of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try14/group1-shard2of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try14/group1-shard3of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try14/group1-shard4of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try14/group1-shard5of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try14/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try9/group1-shard1of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try9/group1-shard2of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try9/group1-shard3of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try9/group1-shard4of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try9/group1-shard5of5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/try9/model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -235,36 +198,6 @@
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="try10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="try11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="try12" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="try13" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="try14" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -314,7 +247,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="editorconfig.notification" value="null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/models/try14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models/try15" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -365,18 +298,18 @@
       <workItem from="1579284571560" duration="6015000" />
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
-      <workItem from="1586197198794" duration="13524000" />
+      <workItem from="1586197198794" duration="14530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153223000" />
+    <option name="totallyTimeSpent" value="154229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29742235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29742235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -391,7 +324,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27882037" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27882037" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
