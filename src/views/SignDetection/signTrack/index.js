@@ -11,7 +11,7 @@ import * as tf from '@tensorflow/tfjs';
 
 const basePath = "https://github.com/gmacmaster/signSpeak/blob/master/models/firstTry";
 
-const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try2/model.json';
+const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try3/model.json';
 
 const defaultParams = {
   flipHorizontal: true,
