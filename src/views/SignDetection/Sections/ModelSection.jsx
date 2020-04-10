@@ -38,7 +38,8 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
-const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/firstTry/model.json';
+const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try15/model.json';
+//try 5,6, 14 best so far
 
 const modelParams = {
   flipHorizontal: true,
@@ -75,6 +76,9 @@ const STANDARD_COLORS = [
   'Teal', 'Thistle', 'Tomato', 'Turquoise', 'Violet', 'Wheat', 'White',
   'WhiteSmoke', 'Yellow', 'YellowGreen'
 ];
+
+const WIDTH = 600;
+const HEIGHT = 450;
 
 
 
@@ -130,10 +134,11 @@ class ModelSection extends React.Component {
 
 
     const tfImg = tf.browser.fromPixels(document.getElementById('video'));
+
     //const tfImg = tf.browser.fromPixels(this.video);
-    const smallImg = tf.image.resizeBilinear(tfImg, [600, 450]); // 600, 450
+    const smallImg = tf.image.resizeBilinear(tfImg, [300, 300]); // 600, 450
     const resized = tf.cast(smallImg, 'float32');
-    const tf4d = tf.tensor4d(Array.from(resized.dataSync()), [1, 600, 450, 3]); // 600, 450
+    const tf4d = tf.tensor4d(Array.from(resized.dataSync()), [1, 300, 300, 3]); // 600, 450
     let predictions = await this.model.executeAsync({ image_tensor: tf.cast(tf4d, 'int32') }, ['detection_boxes', 'num_detections', 'detection_classes', 'detection_scores']);
     let timeEnd = Date.now();
     this.fps = Math.round(1000 / (timeEnd - timeBegin));
@@ -241,10 +246,10 @@ class ModelSection extends React.Component {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     // draw results
     for (let i = 0; i < totalPredictions[0]; i++) {
-      const minY = predictionBoxes[i * 4] * 450;
-      const minX = predictionBoxes[i * 4 + 1] * 600;
-      const maxY = predictionBoxes[i * 4 + 2] * 450;
-      const maxX = predictionBoxes[i * 4 + 3] * 600;
+      const minY = predictionBoxes[i * 4] * HEIGHT;
+      const minX = predictionBoxes[i * 4 + 1] * WIDTH;
+      const maxY = predictionBoxes[i * 4 + 2] * HEIGHT;
+      const maxX = predictionBoxes[i * 4 + 3] * WIDTH;
       const score = predictionScores[i] * 100;
       ctx.font = '14px Arial bold';
 
@@ -281,7 +286,7 @@ class ModelSection extends React.Component {
     let clientWidth = document.documentElement.clientWidth;
 
     // set max width as 600
-    this.state.resultWidth = Math.min(600, clientWidth);
+    this.state.resultWidth = Math.min(WIDTH, clientWidth);
     // set the height according to the video ratio
     this.state.resultHeight = this.state.resultWidth * this.state.videoRatio;
 
@@ -298,16 +303,16 @@ class ModelSection extends React.Component {
     // canvas.width = this.state.resultWidth;
     // video.height = this.state.resultHeight;
     // canvas.height = this.state.resultHeight;
-    video.width = 600;
-    canvas.width = 600;
-    video.height = 450;
-    canvas.height = 450;
+    video.width = WIDTH;
+    canvas.width = WIDTH;
+    video.height = HEIGHT;
+    canvas.height = HEIGHT;
   }
 
   render() {
     const videoConstraints = {
-      width: 1280,
-      height: 720,
+      width: 600,
+      height: 600,
       facingMode: "user"
     };
     const { classes } = this.props;
