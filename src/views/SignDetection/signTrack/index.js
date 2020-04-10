@@ -8,6 +8,8 @@
 
 
 import * as tf from '@tensorflow/tfjs';
+import { loadGraphModel } from '@tensorflow/tfjs-converter'
+
 
 const basePath = "https://github.com/gmacmaster/signSpeak/blob/master/models/firstTry";
 
@@ -77,16 +79,19 @@ export class ObjectDetection {
   }
 
   async load() {
-    this.fps = 0;
-    await tf.ready();
-    this.model = await tf.loadGraphModel(MODEL_URL);
-    console.log(this.model);
+    this.isModelReady = false;
 
-    // Warmup the model.
-    const result = await this.model.executeAsync(tf.zeros([1, 300, 300, 3],'int32'));
-    result.map(async (t) => await t.data());
-    result.map(async (t) => t.dispose());
-    // console.log("model loaded and warmed up")
+    // load the model with loadGraphModel
+    return loadGraphModel(MODEL_URL)
+        .then((model) => {
+          this.model = model;
+          this.isModelReady = true;
+          console.log('model loaded: ', model)
+        })
+        .catch((error) => {
+          console.log('failed to load the model', error);
+          throw (error)
+        })
   }
 
   async detect(input) {

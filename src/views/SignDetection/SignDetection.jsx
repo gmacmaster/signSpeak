@@ -39,6 +39,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 // Sections for this page
 import DemoSection from "./Sections/DemoSection.jsx";
 import ProductSection from "./Sections/ProductSection.jsx";
+import ModelSection from "./Sections/ModelSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
 const dashboardRoutes = [];
@@ -79,13 +80,11 @@ class SignDetection extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h2 className={classes.title}>Help Train Our Model!</h2>
+                <h2 className={classes.title}>Try Out Our Model!</h2>
                 <h4>
-                  Training a computer vision model requires a lot of data.
-                  We need your help to gather that data. By recording yourself
-                  signing various different signs and sending the resulting file
-                  to us, you will be making a great contribution to the project.
-                  We greatly appreciate your help.
+                  So far the model is very limited in its accuracy. We continue to
+                  work to make improvements and will update this page as they come.
+                  If you want to help make the model better, visit <a href={'/#/helpTrain'} target={'_blank'}>this</a> page!
                 </h4>
               </GridItem>
             </GridContainer>
@@ -93,9 +92,7 @@ class SignDetection extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <ProductSection />
-              {this.state.showHelpSection ? <DemoSection startTraining={this.startTraining} trainingVisible={this.state.showTrainingSection}/>: null }
-              {this.state.showTrainingSection ? <WorkSection showHelp={this.showHelp} helpVisible={this.state.showHelpSection}/>: null }
+            <ModelSection />
           </div>
         </div>
         <Footer />
