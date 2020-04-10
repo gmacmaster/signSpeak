@@ -26,10 +26,6 @@ import { loadGraphModel } from '@tensorflow/tfjs-converter'
 import * as signsToUse from '../Utils/Signs'
 
 // @material-ui/icons
-import AccessibilityNew from "@material-ui/icons/AccessibilityNew";
-import School from "@material-ui/icons/School";
-import Videocam from "@material-ui/icons/Videocam";
-import Lock from "@material-ui/icons/Lock";
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 
@@ -38,7 +34,7 @@ import Webcam from "react-webcam";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
+import Button from "components/CustomButtons/Button.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
@@ -96,6 +92,8 @@ class ModelSection extends React.Component {
       isVideoStreamReady:false,
       isModelReady: false,
       initFailMessage: '',
+      word: '',
+      currentLetter: ''
     };
 
     let streamPromise = null;
@@ -153,7 +151,8 @@ class ModelSection extends React.Component {
 
   initWebcamStream () {
     // if the browser supports mediaDevices.getUserMedia API
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+    if (navigator.getUserMedia) {
       return navigator.mediaDevices.getUserMedia({
         audio: false, // don't capture audio
         video: { facingMode: 'environment' } // use the rear camera if there is
@@ -262,6 +261,11 @@ class ModelSection extends React.Component {
             minX,
             minY > 10 ? minY - 5 : 10
         )
+        let currentLetter = this.state.currentLetter;
+        if (currentLetter !== this.signs[predictionClasses[i]-1].Sign) {
+          currentLetter = this.signs[predictionClasses[i]-1].Sign;
+          this.setState({ word: this.state.word + currentLetter, currentLetter})
+        }
       }
       // Write FPS to top left
       ctx.lineWidth = 1;
@@ -318,7 +322,12 @@ class ModelSection extends React.Component {
                     <div className="centeredText" style={{textAlign: 'center'}}>
                       <CircularProgress />
                     </div>
-                  </React.Fragment> : null }
+                  </React.Fragment> :
+                  <React.Fragment>
+                    <h3 className={classes.title} style={{marginTop: '0px'}}>Current Word: {this.state.word}</h3>
+                    <Button color="primary" onClick={()=>this.setState({word: '', currentLetter: ''})}>Clear Word</Button>
+                  </React.Fragment>
+              }
               <div className="resultFrame" style={{display: 'grid', }}>
                 <video id="video" ref={video => this.video} autoPlay style={{ gridArea: ' 1 / 1 / 2 / 2'}}/>
                 <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2'}}/>
