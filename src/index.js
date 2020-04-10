@@ -27,7 +27,7 @@ import AboutUs from "views/AboutUs/AboutUs";
 import Components from "views/Components/Components.jsx";
 import HelpTrain from "views/HelpTrain/HelpTrain";
 import SignDetection from "views/SignDetection/SignDetection";
-import ImageChecking from "views/ImageChecking/ImageChecking";
+//import ImageChecking from "views/ImageChecking/ImageChecking";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
@@ -40,7 +40,7 @@ ReactDOM.render(
       <Route path="/aboutUs" component={AboutUs} />
       <Route path="/components" component={Components} />
       <Route path="/helpTrain" component={HelpTrain} />
-      <Route path="/ImageChecking" component={ImageChecking} />
+      {/*<Route path="/ImageChecking" component={ImageChecking} />*/}
       <Route path="/login-page" component={LoginPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/SignDetection" component={SignDetection} />
