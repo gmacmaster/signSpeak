@@ -283,7 +283,6 @@ class ModelSection extends React.Component {
   setResultSize(){
     // get the current browser window size
     let clientWidth = document.documentElement.clientWidth;
-    console.log(clientWidth);
 
     // set max width as 600
     this.state.resultWidth = Math.min(WIDTH, clientWidth);
@@ -334,8 +333,8 @@ class ModelSection extends React.Component {
                   </React.Fragment>
               }
               <div className="resultFrame" style={{display: 'grid', }} id={"resultFrame"}>
-                <video id="video" ref={video => this.video} autoPlay style={{ gridArea: ' 1 / 1 / 2 / 2'}} controls={false} playsInline playsinline webkit-playsinline="true"/>
-                <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2' }}/>
+                <video id="video" ref={video => this.video} autoPlay="autoplay" style={{ gridArea: ' 1 / 1 / 2 / 2' ,objectFit: 'contain', position: 'absolute'}} controls={false} playsInline playsinline/>
+                <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2' , position: 'absolute'}}/>
               </div>
               <div className="video-container">
 
