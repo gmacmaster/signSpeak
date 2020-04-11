@@ -77,14 +77,13 @@ const STANDARD_COLORS = [
   'WhiteSmoke', 'Yellow', 'YellowGreen'
 ];
 
-const WIDTH = 600;
-const HEIGHT = 450;
+let WIDTH = 600;
+let HEIGHT = 450;
 
 
 
 class ModelSection extends React.Component {
   constructor(props){
-    console.log(STANDARD_COLORS.length);
     super(props);
 
     this.state = {
@@ -126,6 +125,11 @@ class ModelSection extends React.Component {
   componentDidMount() {
     this.streamPromise = this.initWebcamStream();
     this.loadModelAndDetection();
+    let width = document.getElementById("resultFrame").getBoundingClientRect().width;
+    if(width < 600){
+      WIDTH=width;
+      HEIGHT=width*.75
+    }
   }
 
   async detectObjects () {
@@ -251,7 +255,7 @@ class ModelSection extends React.Component {
       if (score > 50) {
         ctx.beginPath();
         ctx.rect(minX, minY, maxX - minX, maxY - minY);
-        ctx.lineWidth = 3;
+        ctx.lineWidth = 1;
         ctx.strokeStyle = STANDARD_COLORS[predictionClasses[i]-1];
         ctx.fillStyle = STANDARD_COLORS[predictionClasses[i]-1];
         ctx.stroke();
@@ -279,6 +283,7 @@ class ModelSection extends React.Component {
   setResultSize(){
     // get the current browser window size
     let clientWidth = document.documentElement.clientWidth;
+    console.log(clientWidth);
 
     // set max width as 600
     this.state.resultWidth = Math.min(WIDTH, clientWidth);
@@ -315,7 +320,7 @@ class ModelSection extends React.Component {
       <div className={classes.section} style={{paddingBottom: '0px'}}>
         <div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6} style={{margin: '0 auto'}}>
+            <GridItem xs={12} sm={12} md={6} style={{margin: '0 auto'}} id="vidContainer">
               {!this.state.isModelReady ?
                   <React.Fragment>
                     <h3 className={classes.title}>Loading Model:</h3>
@@ -328,8 +333,8 @@ class ModelSection extends React.Component {
                     <Button color="primary" onClick={()=>this.setState({word: '', currentLetter: ''})}>Clear Word</Button>
                   </React.Fragment>
               }
-              <div className="resultFrame" style={{display: 'grid', }}>
-                <video id="video" ref={video => this.video} autoPlay style={{ gridArea: ' 1 / 1 / 2 / 2' }} controls={false} playsInline playsinline webkit-playsinline="true"/>
+              <div className="resultFrame" style={{display: 'grid', }} id={"resultFrame"}>
+                <video id="video" ref={video => this.video} autoPlay style={{ gridArea: ' 1 / 1 / 2 / 2'}} controls={false} playsInline playsinline webkit-playsinline="true"/>
                 <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2' }}/>
               </div>
               <div className="video-container">

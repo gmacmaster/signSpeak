@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" description="}" line="224" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" afterDir="false" />
@@ -32,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="331" column="174" selection-start-line="331" selection-start-column="174" selection-end-line="331" selection-end-column="174" />
+            <state relative-caret-position="174">
+              <caret line="127" column="85" selection-start-line="127" selection-start-column="85" selection-end-line="127" selection-end-column="85" />
               <folding>
                 <element signature="e#753#814#0" expanded="true" />
                 <element signature="e#983#1049#0" expanded="true" />
@@ -100,8 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fromp</find>
-      <find>executeAsync</find>
       <find>predictions</find>
       <find>batched</find>
       <find>num_input_channels</find>
@@ -130,6 +131,8 @@
       <find>600</find>
       <find>450</find>
       <find>SignDetection</find>
+      <find>.height</find>
+      <find>console.</find>
     </findStrings>
     <replaceStrings>
       <replace>Sign</replace>
@@ -221,6 +224,12 @@
               <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -284,12 +293,12 @@
       <workItem from="1579284571560" duration="6015000" />
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
-      <workItem from="1586197198794" duration="39580000" />
+      <workItem from="1586197198794" duration="41041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179279000" />
+    <option name="totallyTimeSpent" value="180740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="857" y="-1080" width="1294" height="1087" extended-state="0" />
@@ -687,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="331" column="174" selection-start-line="331" selection-start-column="174" selection-end-line="331" selection-end-column="174" />
+        <state relative-caret-position="174">
+          <caret line="127" column="85" selection-start-line="127" selection-start-column="85" selection-end-line="127" selection-end-column="85" />
           <folding>
             <element signature="e#753#814#0" expanded="true" />
             <element signature="e#983#1049#0" expanded="true" />
