@@ -329,8 +329,8 @@ class ModelSection extends React.Component {
                   </React.Fragment>
               }
               <div className="resultFrame" style={{display: 'grid', }}>
-                <video id="video" ref={video => this.video} autoPlay style={{ gridArea: ' 1 / 1 / 2 / 2'}}/>
-                <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2'}}/>
+                <video id="video" ref={video => this.video} autoPlay style={{ gridArea: ' 1 / 1 / 2 / 2', display: 'inline', position: 'fixed'}}/>
+                <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2', position: 'fixed'}}/>
               </div>
               <div className="video-container">
 
