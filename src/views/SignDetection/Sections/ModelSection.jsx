@@ -332,9 +332,9 @@ class ModelSection extends React.Component {
                     <Button color="primary" onClick={()=>this.setState({word: '', currentLetter: ''})}>Clear Word</Button>
                   </React.Fragment>
               }
-              <div className="resultFrame" style={{display: 'grid', }} id={"resultFrame"}>
-                <video id="video" ref={video => this.video} autoPlay="autoplay" style={{ gridArea: ' 1 / 1 / 2 / 2' ,objectFit: 'contain', position: 'absolute'}} controls={false} playsInline playsinline/>
-                <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2' , position: 'absolute'}}/>
+              <div className="resultFrame video-container" style={{display: 'grid', }} id={"resultFrame"}>
+                <video id="video" ref={video => this.video} autoPlay="autoplay" style={{ gridArea: ' 1 / 1 / 2 / 2' ,objectFit: 'contain'}} controls={false} playsInline/>
+                <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2' }}/>
               </div>
               <div className="video-container">
 
