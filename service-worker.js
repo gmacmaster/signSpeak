@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/signSpeak/precache-manifest.1447f3a9aa4c53c0a273c6ba62a5cca7.js"
+  "/signSpeak/precache-manifest.e7199f0ab2bd4b142559961078b46653.js"
 );
 
 self.addEventListener('message', (event) => {
