@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d0b62233989a9a4007ee32d63d2a29ce",
+    "revision": "b10d7d404a3269018c2b3620ff42da66",
     "url": "/signSpeak/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/signSpeak/static/css/2.38100b22.chunk.css"
   },
   {
-    "revision": "a56d753cf3ed7f7d5e35",
+    "revision": "049931878b5fb1d9db2e",
     "url": "/signSpeak/static/css/main.4100f1f0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/signSpeak/static/js/2.d816d418.chunk.js"
   },
   {
-    "revision": "a56d753cf3ed7f7d5e35",
-    "url": "/signSpeak/static/js/main.f5e1e6df.chunk.js"
+    "revision": "049931878b5fb1d9db2e",
+    "url": "/signSpeak/static/js/main.8369135d.chunk.js"
   },
   {
     "revision": "a0f2edff933a52207da9",
