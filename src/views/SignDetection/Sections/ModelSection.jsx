@@ -38,7 +38,7 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
-const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try15/model.json';
+const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try16/model.json';
 //try 5,6, 14 best so far
 
 const modelParams = {
@@ -157,58 +157,60 @@ class ModelSection extends React.Component {
   initWebcamStream () {
     // if the browser supports mediaDevices.getUserMedia API
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
-    if (navigator.getUserMedia) {
-      return navigator.mediaDevices.getUserMedia({
-        audio: false, // don't capture audio
-        video: { facingMode: 'environment' } // use the rear camera if there is
-      })
-          .then(stream => {
-            // set <video> source as the webcam input
-            let video = document.getElementById('video');
-            //let video = this.video;
-            try {
-              //document.getElementById('video').srcObject = stream;
+    // if (navigator.getUserMedia) {
+    //
+    // } else {
+    //   return Promise.reject(new Error('Your browser does not support mediaDevices.getUserMedia API'))
+    // }
+    return navigator.mediaDevices.getUserMedia({
+      audio: false, // don't capture audio
+      video: { facingMode: 'environment' } // use the rear camera if there is
+    })
+        .then(stream => {
+          // set <video> source as the webcam input
+          let video = document.getElementById('video');
+          //let video = this.video;
+          try {
+            //document.getElementById('video').srcObject = stream;
 
-              video.srcObject = stream
-            } catch (error) {
-              console.log(error);
-              // support older browsers
-              //document.getElementById('video').src = window.URL.createObjectURL(stream);
-              video.src = window.URL.createObjectURL(stream);
+            video.srcObject = stream
+          } catch (error) {
+            console.log(error);
+            // support older browsers
+            //document.getElementById('video').src = window.URL.createObjectURL(stream);
+            video.src = window.URL.createObjectURL(stream);
+          }
+
+          /*
+            model.detect uses tf.fromPixels to create tensors.
+            tf.fromPixels api will get the <video> size from the width and height attributes,
+              which means <video> width and height attributes needs to be set before called model.detect
+
+            To make the <video> responsive, I get the initial video ratio when it's loaded (onloadedmetadata)
+            Then addEventListener on resize, which will adjust the size but remain the ratio
+            At last, resolve the Promise.
+          */
+          return new Promise((resolve, reject) => {
+            // when video is loaded
+            video.onloadedmetadata = () => {
+              video.play();
+              // calculate the video ratio
+              this.state.videoRatio = video.offsetHeight / video.offsetWidth;
+              // add event listener on resize to reset the <video> and <canvas> sizes
+              window.addEventListener('resize', this.setResultSize);
+              // set the initial size
+              this.setResultSize();
+
+              this.state.isVideoStreamReady = true;
+              console.log('webcam stream initialized');
+              resolve()
             }
-
-            /*
-              model.detect uses tf.fromPixels to create tensors.
-              tf.fromPixels api will get the <video> size from the width and height attributes,
-                which means <video> width and height attributes needs to be set before called model.detect
-
-              To make the <video> responsive, I get the initial video ratio when it's loaded (onloadedmetadata)
-              Then addEventListener on resize, which will adjust the size but remain the ratio
-              At last, resolve the Promise.
-            */
-            return new Promise((resolve, reject) => {
-              // when video is loaded
-              video.onloadedmetadata = () => {
-                // calculate the video ratio
-                this.state.videoRatio = video.offsetHeight / video.offsetWidth;
-                // add event listener on resize to reset the <video> and <canvas> sizes
-                window.addEventListener('resize', this.setResultSize);
-                // set the initial size
-                this.setResultSize();
-
-                this.state.isVideoStreamReady = true;
-                console.log('webcam stream initialized');
-                resolve()
-              }
-            })
           })
-          .catch(error => {
-            console.log('failed to initialize webcam stream', error);
-            throw (error)
-          })
-    } else {
-      return Promise.reject(new Error('Your browser does not support mediaDevices.getUserMedia API'))
-    }
+        })
+        .catch(error => {
+          console.log('failed to initialize webcam stream', error);
+          throw (error)
+        })
   }
 
   loadCustomModel() {
