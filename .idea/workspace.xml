@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="335" column="168" selection-start-line="335" selection-start-column="168" selection-end-line="335" selection-end-column="168" />
+            <state relative-caret-position="429">
+              <caret line="335" column="135" selection-start-line="335" selection-start-column="135" selection-end-line="335" selection-end-column="135" />
               <folding>
                 <element signature="e#753#814#0" expanded="true" />
                 <element signature="e#983#1049#0" expanded="true" />
@@ -293,12 +293,12 @@
       <workItem from="1579284571560" duration="6015000" />
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
-      <workItem from="1586197198794" duration="41841000" />
+      <workItem from="1586197198794" duration="42147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181540000" />
+    <option name="totallyTimeSpent" value="181846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="857" y="-1080" width="1294" height="1087" extended-state="0" />
@@ -696,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="335" column="168" selection-start-line="335" selection-start-column="168" selection-end-line="335" selection-end-column="168" />
+        <state relative-caret-position="429">
+          <caret line="335" column="135" selection-start-line="335" selection-start-column="135" selection-end-line="335" selection-end-column="135" />
           <folding>
             <element signature="e#753#814#0" expanded="true" />
             <element signature="e#983#1049#0" expanded="true" />
