@@ -38,7 +38,7 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
-const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try16/model.json';
+const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try21/model.json';
 //try 5,6, 14 best so far
 
 const modelParams = {

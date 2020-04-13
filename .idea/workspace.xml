@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" description="}" line="224" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="" />
+    <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -33,12 +35,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="336" column="114" selection-start-line="336" selection-start-column="114" selection-end-line="336" selection-end-column="114" />
+            <state relative-caret-position="374">
+              <caret line="38" column="86" selection-start-line="38" selection-start-column="86" selection-end-line="38" selection-end-column="86" />
               <folding>
                 <element signature="e#753#814#0" expanded="true" />
                 <element signature="e#983#1049#0" expanded="true" />
-                <element signature="e#1319#1381#0" expanded="true" />
                 <element signature="e#1804#3495#0" />
               </folding>
             </state>
@@ -127,10 +128,10 @@
       <find>CircularProgress</find>
       <find>600</find>
       <find>450</find>
-      <find>SignDetection</find>
       <find>.height</find>
-      <find>console.</find>
       <find>video-container</find>
+      <find>console.</find>
+      <find>SignDetection</find>
     </findStrings>
     <replaceStrings>
       <replace>Sign</replace>
@@ -225,6 +226,12 @@
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="try21" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -245,7 +252,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="editorconfig.notification" value="null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/models/try20" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models/try19" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -254,11 +261,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gordo\Documents\ML Project\site\models\try20" />
+      <recent name="C:\Users\gordo\Documents\ML Project\site\models\try21" />
       <recent name="C:\Users\gordo\Documents\ML Project\site\models\try18" />
       <recent name="C:\Users\gordo\Documents\ML Project\site\models\try17" />
       <recent name="C:\Users\gordo\Documents\ML Project\site\models\try16" />
-      <recent name="C:\Users\gordo\Documents\ML Project\site\src\views\SignDetection\Sections" />
-      <recent name="C:\Users\gordo\Documents\ML Project\site\models\try15" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -296,15 +303,16 @@
       <workItem from="1579284571560" duration="6015000" />
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
-      <workItem from="1586197198794" duration="42808000" />
+      <workItem from="1586197198794" duration="42989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182507000" />
+    <option name="totallyTimeSpent" value="182688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="857" y="-1080" width="1294" height="1087" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16162421" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -352,9 +360,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/UserData/813523-M-0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/UserData/813523-L-4.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -696,14 +701,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/try21/group1-shard1of5.bin">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="336" column="114" selection-start-line="336" selection-start-column="114" selection-end-line="336" selection-end-column="114" />
+        <state relative-caret-position="374">
+          <caret line="38" column="86" selection-start-line="38" selection-start-column="86" selection-end-line="38" selection-end-column="86" />
           <folding>
             <element signature="e#753#814#0" expanded="true" />
             <element signature="e#983#1049#0" expanded="true" />
-            <element signature="e#1319#1381#0" expanded="true" />
             <element signature="e#1804#3495#0" />
           </folding>
         </state>
