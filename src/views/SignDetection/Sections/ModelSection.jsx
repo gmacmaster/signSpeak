@@ -22,6 +22,7 @@ import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 import * as tf from '@tensorflow/tfjs'
 import { loadGraphModel } from '@tensorflow/tfjs-converter'
+import '@tensorflow/tfjs-backend-wasm';
 
 import * as signsToUse from '../Utils/Signs'
 
@@ -31,8 +32,6 @@ import Learn from "@material-ui/icons/School";
 import Play from "@material-ui/icons/VideogameAsset";
 import Practice from "@material-ui/icons/DirectionsRun";
 
-
-import Webcam from "react-webcam";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -48,21 +47,12 @@ const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master
 //try 5,6, 14 best so far
 // model tries: 2, 3, 8
 
-const modelParams = {
-  flipHorizontal: true,
-  outputStride: 16,
-  imageScaleFactor: 0.7,
-  maxNumBoxes: 1,
-  iouThreshold: 0.5,
-  scoreThreshold: 0.99,
-  modelType: "ssdmobilenetv2"
-};
 
 const STANDARD_COLORS = [
   'AliceBlue', 'Chartreuse', 'Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
   'BlueViolet', 'BurlyWood',
   'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan',
-  'DarkCyan', 'DarkGoldenRod', 'DarkGrey', 'DarkKhaki', 'DarkOrange',
+  'DarkCyan', 'DarkGoldenRod', 'DarkOrange',
   'DarkOrchid', 'DarkSalmon', 'DarkSeaGreen', 'DarkTurquoise', 'DarkViolet',
   'DeepPink', 'DeepSkyBlue', 'DodgerBlue', 'FireBrick', 'FloralWhite',
   'ForestGreen', 'Fuchsia', 'Gainsboro', 'GhostWhite', 'Gold', 'GoldenRod',
@@ -239,15 +229,17 @@ class ModelSection extends React.Component {
 
   loadCustomModel() {
     let isModelReady = false;
-    return loadGraphModel(MODEL_URL)
-        .then((model) => {
-          this.model = model;
-          console.log('model loaded: ', model)
-        })
-        .catch((error) => {
-          console.log('failed to load the model', error);
-          throw (error)
-        })
+    tf.setBackend('wasm').then(() => {
+      return loadGraphModel(MODEL_URL)
+          .then((model) => {
+            this.model = model;
+            console.log('model loaded: ', model)
+          })
+          .catch((error) => {
+            console.log('failed to load the model', error);
+            throw (error)
+          })
+    });
   }
 
   loadModelAndDetection(){

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" description="}" line="250" />
+    <bookmark url="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" description="}" line="242" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,14 +34,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="46" column="87" lean-forward="true" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
+            <state relative-caret-position="136">
+              <caret line="231" column="23" selection-start-line="231" selection-start-column="19" selection-end-line="231" selection-end-column="23" />
               <folding>
                 <element signature="e#753#814#0" expanded="true" />
                 <element signature="e#983#1049#0" expanded="true" />
+                <element signature="e#1265#1327#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#607#633#0" expanded="true" />
+                <element signature="e#860#904#0" expanded="true" />
+                <element signature="e#1142#1202#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,9 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.vi</find>
-      <find>setResultSize</find>
-      <find>isVideoStreamReady</find>
       <find>video</find>
       <find>signs.</find>
       <find>Signs</find>
@@ -86,6 +101,9 @@
       <find>Webcam</find>
       <find>current sign</find>
       <find>SignDetection</find>
+      <find>tf.</find>
+      <find>tfImg</find>
+      <find>tf.read</find>
     </findStrings>
     <replaceStrings>
       <replace>Sign</replace>
@@ -144,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js" />
         <option value="$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/views/Components/Sections/SectionPills.jsx" />
         <option value="$PROJECT_DIR$/src/components/NavPills/NavPills.jsx" />
@@ -155,14 +172,15 @@
         <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/WorkSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="855" />
-    <option name="y" value="-1089" />
-    <option name="width" value="1298" />
-    <option name="height" value="1098" />
+    <option name="x" value="857" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1294" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -180,7 +198,7 @@
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="modelTries" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,18 +264,18 @@
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
       <workItem from="1586197198794" duration="52654000" />
-      <workItem from="1586890041804" duration="373000" />
+      <workItem from="1586890041804" duration="2308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192726000" />
+    <option name="totallyTimeSpent" value="194661000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="855" y="-1089" width="1298" height="1098" extended-state="0" />
+    <frame x="857" y="-1080" width="1294" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2452381" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24601911" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -272,7 +290,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007962" side_tool="true" weight="0.21802935" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49920383" visible="true" weight="0.21554404" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49920383" visible="true" weight="0.13102725" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -401,13 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@tensorflow/tfjs-converter/dist/executor/graph_model.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="212" column="24" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -613,19 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#607#633#0" expanded="true" />
-            <element signature="e#860#904#0" expanded="true" />
-            <element signature="e#1141#1201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -650,13 +648,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@tensorflow/tfjs-converter/dist/executor/graph_model.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="212" column="24" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="46" column="87" lean-forward="true" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
+        <state relative-caret-position="136">
+          <caret line="231" column="23" selection-start-line="231" selection-start-column="19" selection-end-line="231" selection-end-column="23" />
           <folding>
             <element signature="e#753#814#0" expanded="true" />
             <element signature="e#983#1049#0" expanded="true" />
+            <element signature="e#1265#1327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#607#633#0" expanded="true" />
+            <element signature="e#860#904#0" expanded="true" />
+            <element signature="e#1142#1202#0" expanded="true" />
           </folding>
         </state>
       </provider>
