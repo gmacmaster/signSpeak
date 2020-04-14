@@ -1,67 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" description="}" line="227" />
+    <bookmark url="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" description="}" line="244" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modelTries/try1/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try1/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try1/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try1/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try1/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try10/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try10/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try10/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try10/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try10/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try11/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try11/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try11/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try11/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try11/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try2/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try2/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try2/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try2/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try2/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try3/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try3/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try3/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try3/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try3/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try4/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try4/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try4/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try4/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try4/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try5/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try5/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try5/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try5/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try5/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try6/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try6/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try6/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try6/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try6/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try7/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try7/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try7/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try7/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try7/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try8/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try8/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try8/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try8/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try8/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try9/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try9/frozen_inference_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try9/group1-shard1of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try9/group1-shard2of2.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelTries/try9/model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavPills/NavPills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavPills/NavPills.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AboutUs/Sections/ProductSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AboutUs/Sections/ProductSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LandingPage/Sections/ProductSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LandingPage/Sections/ProductSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -92,43 +40,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+            <state relative-caret-position="243">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
               <folding>
                 <element signature="e#753#814#0" expanded="true" />
                 <element signature="e#983#1049#0" expanded="true" />
-                <element signature="e#1319#1381#0" expanded="true" />
-                <element signature="e#1804#3495#0" />
+                <element signature="e#1107#1169#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="104" />
+            <state relative-caret-position="396">
+              <caret line="397" column="37" lean-forward="true" selection-start-line="397" selection-end-line="398" />
               <folding>
-                <element signature="e#331#370#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#685#720#0" expanded="true" />
+                <element signature="e#1155#1217#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="687">
               <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -149,11 +80,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="351" selection-start-line="351" selection-end-line="355" selection-end-column="6" />
+            <state relative-caret-position="493">
+              <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/AboutUs/Sections/ProductSection.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -169,13 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>batched</find>
-      <find>num_input_channels</find>
-      <find>eslint</find>
-      <find>rundete</find>
-      <find>load</find>
-      <find>product</find>
-      <find>Webcam</find>
       <find>this.vi</find>
       <find>setResultSize</find>
       <find>isVideoStreamReady</find>
@@ -185,7 +121,6 @@
       <find>Signs.</find>
       <find>SignsLeft</find>
       <find>SignsLeft[</find>
-      <find>classes</find>
       <find>getContext</find>
       <find>canvas</find>
       <find>.canvas</find>
@@ -197,8 +132,16 @@
       <find>450</find>
       <find>.height</find>
       <find>video-container</find>
-      <find>SignDetection</find>
       <find>console.</find>
+      <find>dashboard</find>
+      <find>math.ran</find>
+      <find>math.r</find>
+      <find>img</find>
+      <find>Dashboard2</find>
+      <find>classes</find>
+      <find>current sign</find>
+      <find>Webcam</find>
+      <find>SignDetection</find>
     </findStrings>
     <replaceStrings>
       <replace>Sign</replace>
@@ -229,12 +172,9 @@
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/views/LandingPage/Sections/ProductSection.jsx" />
-        <option value="$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.jsx" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
-        <option value="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx" />
         <option value="$PROJECT_DIR$/src/views/HelpTrain/Sections/ProductSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" />
@@ -262,8 +202,14 @@
         <option value="$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/views/Components/Sections/SectionPills.jsx" />
+        <option value="$PROJECT_DIR$/src/components/NavPills/NavPills.jsx" />
+        <option value="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" />
+        <option value="$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx" />
+        <option value="$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx" />
+        <option value="$PROJECT_DIR$/src/views/LandingPage/Sections/ProductSection.jsx" />
+        <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/ProductSection.jsx" />
       </list>
     </option>
   </component>
@@ -289,13 +235,66 @@
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="modelTries" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="modelTries" type="462c0819:PsiDirectoryNode" />
-              <item name="try1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="AboutUs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="AboutUs" type="462c0819:PsiDirectoryNode" />
+              <item name="Sections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="HelpTrain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="HelpTrain" type="462c0819:PsiDirectoryNode" />
+              <item name="Sections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="SignDetection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="SignDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="signTrack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="SignDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -309,7 +308,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="editorconfig.notification" value="null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modelTries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -360,18 +359,18 @@
       <workItem from="1579284571560" duration="6015000" />
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
-      <workItem from="1586197198794" duration="44081000" />
+      <workItem from="1586197198794" duration="50628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183780000" />
+    <option name="totallyTimeSpent" value="190327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="855" y="-1089" width="1298" height="1098" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16111112" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2452381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -417,54 +416,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/UserData/813523-E-8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/UserData/813523-E-4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/UserData/813523-E-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/UserData/813523-E-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/UserData/813523-E-0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6828" column="13" selection-start-line="6828" selection-start-column="13" selection-end-line="6828" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/predictions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="25219" column="23" selection-start-line="25219" selection-start-column="17" selection-end-line="25219" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CustomButtons/Button.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Components/Components.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/FormControlLabel/FormControlLabel.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -561,17 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#939#989#0" expanded="true" />
-            <element signature="e#1445#1504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -633,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="351" selection-start-line="351" selection-end-line="355" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@tensorflow/tfjs-converter/dist/executor/graph_model.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
@@ -666,41 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="104" />
-          <folding>
-            <element signature="e#331#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Utils/Signs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-end-line="56" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="45" column="16" selection-start-line="45" selection-end-line="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#685#720#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,19 +621,6 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#939#989#0" expanded="true" />
             <element signature="e#1445#1498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#607#633#0" expanded="true" />
-            <element signature="e#860#904#0" expanded="true" />
-            <element signature="e#1141#1201#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,23 +649,174 @@
         <state relative-caret-position="-510" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
-          <folding>
-            <element signature="e#753#814#0" expanded="true" />
-            <element signature="e#983#1049#0" expanded="true" />
-            <element signature="e#1319#1381#0" expanded="true" />
-            <element signature="e#1804#3495#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Components/Components.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="86" column="19" lean-forward="true" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Components/Sections/SectionPills.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="e#1008#1070#0" expanded="true" />
+            <element signature="e#6025#8958#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NavPills/NavPills.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#766#801#0" expanded="true" />
+            <element signature="e#887#948#0" expanded="true" />
+            <element signature="e#1053#1115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#753#814#0" expanded="true" />
+            <element signature="e#983#1049#0" expanded="true" />
+            <element signature="e#1107#1169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/signTrack/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="104" />
+          <folding>
+            <element signature="e#331#370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/WorkSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="397" column="37" lean-forward="true" selection-start-line="397" selection-end-line="398" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#685#720#0" expanded="true" />
+            <element signature="e#1155#1217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/WorkSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="351" selection-start-line="351" selection-end-line="355" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/Sections/WorkSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#858#920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/Sections/ProductSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1187#1249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/LandingPage/LandingPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#939#989#0" expanded="true" />
+            <element signature="e#1445#1504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#607#633#0" expanded="true" />
+            <element signature="e#860#904#0" expanded="true" />
+            <element signature="e#1141#1201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/styles/withStyles.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AboutUs/Sections/ProductSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/HelpTrain/Sections/TeamSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AboutUs/AboutUs.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

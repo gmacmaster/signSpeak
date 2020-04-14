@@ -32,6 +32,8 @@ import Videocam from "@material-ui/icons/Videocam";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
+import Button from "components/CustomButtons/Button.jsx";
+
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
@@ -39,10 +41,10 @@ class ProductSection extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
+      <div className={classes.section} style={{paddingBottom: '0'}}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Coming Soon: Translate in Live Time!</h2>
+            <h2 className={classes.title}>Translate in Live Time!</h2>
             <h5 className={classes.description}>
               Our computer vision model allows users to translate sign language
               in real time. Whether you're chatting with your friends, ordering a
@@ -81,6 +83,17 @@ class ProductSection extends React.Component {
                 iconColor="danger"
                 vertical
               />
+            </GridItem>
+          </GridContainer>
+          <GridContainer>
+            <GridItem
+                xs={12}
+                sm={12}
+                md={4}
+                className={classes.textCenter + ' ' + classes.autoMargin}
+                style={{margin: '0 auto'}}
+            >
+              <Button color="info" href={process.env.PUBLIC_URL+'/#/SignDetection'}>Try It Here!</Button>
             </GridItem>
           </GridContainer>
         </div>

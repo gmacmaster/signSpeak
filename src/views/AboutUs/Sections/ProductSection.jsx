@@ -39,47 +39,25 @@ class ProductSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Let{"'"}s talk product</h2>
+            <h2 className={classes.title}>The Project</h2>
             <h5 className={classes.description}>
-              This is the paragraph where you can write more details about your
-              product. Keep you user engaged by providing meaningful
-              information. Remember that by this time, the user is curious,
-              otherwise he wouldn{"'"}t scroll to get here. Add a button if you
-              want the user to see more.
+              This project was created as a senior thesis for the University
+              of Vermont's Honors College class of 2020. Over the past several
+              years there have been incredible advancements in machine learning
+              and object detection. They’re now being used in everything from
+              security systems to self-driving cars, to automated sorting
+              facilities. One area that has had little benefit from the
+              advancements in breaking down the communication barriers between
+              the Deaf and those who are unable to understand sign language.
+              A project that was initially designed as a translation tool
+              took on took an unexpected turn that looked deeper
+              at the differences and challenges among various object detection
+              algorithms, how computing power affects how fast and efficiently
+              code can run, and how difficult it can be to work with people.
+              Read the full paper <a>here</a>.
             </h5>
           </GridItem>
         </GridContainer>
-        <div>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={4}>
-              <InfoArea
-                title="Free Chat"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={Chat}
-                iconColor="info"
-                vertical
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
-              <InfoArea
-                title="Verified Users"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={VerifiedUser}
-                iconColor="success"
-                vertical
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
-              <InfoArea
-                title="Fingerprint"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={Fingerprint}
-                iconColor="danger"
-                vertical
-              />
-            </GridItem>
-          </GridContainer>
-        </div>
       </div>
     );
   }

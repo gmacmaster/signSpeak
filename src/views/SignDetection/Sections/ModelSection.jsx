@@ -27,6 +27,9 @@ import * as signsToUse from '../Utils/Signs'
 
 // @material-ui/icons
 import CircularProgress from '@material-ui/core/CircularProgress';
+import Learn from "@material-ui/icons/School";
+import Play from "@material-ui/icons/VideogameAsset";
+import Practice from "@material-ui/icons/DirectionsRun";
 
 
 import Webcam from "react-webcam";
@@ -35,14 +38,15 @@ import Webcam from "react-webcam";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
+import NavPills from "components/NavPills/NavPills.jsx";
+import pillsStyle from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
+import Dashboard from "@material-ui/core/SvgIcon/SvgIcon";
 
-// const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try19/model.json';
+const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/modelTries/try8/model.json';
 //try 5,6, 14 best so far
-
-const MODEL_URL = 'http://localhost:8000/modelTries/try1/model.json';
-
+// model tries: 2, 3, 8
 
 const modelParams = {
   flipHorizontal: true,
@@ -56,7 +60,7 @@ const modelParams = {
 
 const STANDARD_COLORS = [
   'AliceBlue', 'Chartreuse', 'Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
-  'BlanchedAlmond', 'BlueViolet', 'BurlyWood', 'CadetBlue', 'AntiqueWhite',
+  'BlanchedAlmond', 'BlueViolet', 'BurlyWood',
   'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan',
   'DarkCyan', 'DarkGoldenRod', 'DarkGrey', 'DarkKhaki', 'DarkOrange',
   'DarkOrchid', 'DarkSalmon', 'DarkSeaGreen', 'DarkTurquoise', 'DarkViolet',
@@ -89,6 +93,8 @@ class ModelSection extends React.Component {
   constructor(props){
     super(props);
 
+    this.signs = signsToUse.default;
+
     this.state = {
       showTrainingSection: false,
       showHelpSection: true,
@@ -99,16 +105,10 @@ class ModelSection extends React.Component {
       isModelReady: false,
       initFailMessage: '',
       word: '',
-      currentLetter: ''
+      currentLetter: '',
+      currentSign: Math.floor(Math.random()*this.signs.length),
+      activeTab: 0
     };
-
-    let streamPromise = null;
-    let modelPromise = null;
-    let model = null;
-
-    let fps = 0;
-
-    this.signs = signsToUse.default;
 
     this.canvas = React.createRef();
     this.video = React.createRef();
@@ -119,6 +119,7 @@ class ModelSection extends React.Component {
     this.loadModelAndDetection = this.loadModelAndDetection.bind(this);
     this.renderPredictionBoxes = this.renderPredictionBoxes.bind(this);
     this.setResultSize = this.setResultSize.bind(this);
+    this.handleTabChange = this.handleTabChange.bind(this);
   }
 
   componentWillMount() {
@@ -132,6 +133,22 @@ class ModelSection extends React.Component {
     if(width < 600){
       WIDTH=width;
       HEIGHT=width*.75
+    }
+  }
+
+  handleTabChange(activeTab){
+    switch (activeTab) {
+      case 2:
+        this.setState({
+          word: '',
+          currentLetter: '',
+          activeTab
+        });
+        break;
+      default:
+        const randSign = Math.floor(Math.random()*this.signs.length);
+        this.setState({currentSign: randSign, activeTab});
+        break;
     }
   }
 
@@ -267,11 +284,24 @@ class ModelSection extends React.Component {
             `${score.toFixed(1)} - ${this.signs[predictionClasses[i]-1].Sign}`,
             minX,
             minY > 10 ? minY - 5 : 10
-        )
-        let currentLetter = this.state.currentLetter;
-        if (currentLetter !== this.signs[predictionClasses[i]-1].Sign) {
-          currentLetter = this.signs[predictionClasses[i]-1].Sign;
-          this.setState({ word: this.state.word + currentLetter, currentLetter})
+        );
+        const { activeTab } = this.state;
+        switch (activeTab) {
+          case 2:
+            let currentLetter = this.state.currentLetter;
+            if (currentLetter !== this.signs[predictionClasses[i]-1].Sign) {
+              currentLetter = this.signs[predictionClasses[i]-1].Sign;
+              this.setState({ word: this.state.word + currentLetter, currentLetter})
+            }
+            break;
+          default:
+            const letterSigned = this.signs[predictionClasses[i]-1].Sign;
+            const { currentSign } = this.state;
+            if(letterSigned === this.signs[currentSign].Sign){
+              const randSign = Math.floor(Math.random()*this.signs.length);
+              this.setState({currentSign: randSign});
+            }
+            break;
         }
       }
       // Write FPS to top left
@@ -292,19 +322,8 @@ class ModelSection extends React.Component {
     // set the height according to the video ratio
     this.state.resultHeight = this.state.resultWidth * this.state.videoRatio;
 
-    // set <video> width and height
-    /*
-      Doesn't use vue binding :width and :height,
-        because the initial value of resultWidth and resultHeight
-        will affect the ratio got from the initWebcamStream()
-    */
     let video = document.getElementById('video');
     let canvas = document.getElementById('canvas');
-    //let video = this.video;
-    // video.width = this.state.resultWidth;
-    // canvas.width = this.state.resultWidth;
-    // video.height = this.state.resultHeight;
-    // canvas.height = this.state.resultHeight;
     video.width = WIDTH;
     canvas.width = WIDTH;
     video.height = HEIGHT;
@@ -312,11 +331,6 @@ class ModelSection extends React.Component {
   }
 
   render() {
-    const videoConstraints = {
-      width: 600,
-      height: 600,
-      facingMode: "user"
-    };
     const { classes } = this.props;
     return (
       <div className={classes.section} style={{paddingBottom: '0px'}}>
@@ -330,25 +344,55 @@ class ModelSection extends React.Component {
                       <CircularProgress />
                     </div>
                   </React.Fragment> :
-                  <React.Fragment>
-                    <h3 className={classes.title} style={{marginTop: '0px'}}>Current Word: {this.state.word}</h3>
-                    <Button color="primary" onClick={()=>this.setState({word: '', currentLetter: ''})}>Clear Word</Button>
-                  </React.Fragment>
+                  <GridContainer>
+                    <GridItem xs={12} sm={12} md={8} lg={6} style={{color: 'black', margin: '0 auto'}}>
+                      <NavPills
+                          handleTabChange={this.handleTabChange}
+                          color="primary"
+                          tabs={[
+                            {
+                              tabButton: "Learn",
+                              tabIcon: Learn,
+                              tabContent: (
+                                <span>
+                                  Sign the letter {this.signs[this.state.currentSign].Name}
+                                  <img src={this.signs[this.state.currentSign].URL}
+                                       alt={this.signs[this.state.currentSign].Name}
+                                       style={{marginBottom: '10px'}}
+                                  />
+                                </span>
+                              )
+                            },
+                            {
+                              tabButton: "Practice",
+                              tabIcon: Practice,
+                              tabContent: (
+                                <span>
+                                  Sign the letter {this.signs[this.state.currentSign].Name}
+                                </span>
+                              )
+                            },
+                            {
+                              tabButton: "Play",
+                              tabIcon: Play,
+                              tabContent: (
+                                  <span>
+                                <h3 className={classes.title} style={{marginTop: '0px'}}>Current Word: {this.state.word}</h3>
+                                <Button color="primary" onClick={()=>this.setState({word: '', currentLetter: ''})}>Clear Word</Button>
+                        </span>
+                              )
+                            }
+                          ]}
+                      />
+                    </GridItem>
+                  </GridContainer>
               }
               <div className="resultFrame" style={{display: 'grid', }} id={"resultFrame"}>
                 <video id="video" ref={video => this.video} autoPlay style={{ gridArea: ' 1 / 1 / 2 / 2'}} controls={false} playsInline/>
                 <canvas id={"canvas"} ref={canvas => this.canvas } width={this.state.resultWidth} height={this.state.resultHeight} style={{ gridArea: ' 1 / 1 / 2 / 2' }}/>
               </div>
-              <div className="video-container">
-
-                {/*<Webcam*/}
-                {/*    audio={false}*/}
-                {/*    ref={this.video}*/}
-                {/*    screenshotFormat="image/jpeg"*/}
-                {/*    screenshotQuality={1}*/}
-                {/*    videoConstraints={videoConstraints}*/}
-                {/*/>*/}
-              </div>
+              <br/>
+              <br/>
             </GridItem>
           </GridContainer>
         </div>

@@ -73,17 +73,6 @@ class LandingPage extends React.Component {
                   to understand sign language. It is our mission to reduce the stigma
                   around deaf culture.
                 </h4>
-                <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-play" />
-                  Watch Demo
-                </Button>
               </GridItem>
             </GridContainer>
           </div>

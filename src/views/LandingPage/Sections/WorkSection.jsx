@@ -35,7 +35,7 @@ class WorkSection extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
+      <div className={classes.section} style={{paddingTop: '0'}}>
         <GridContainer justify="center">
           <GridItem cs={12} sm={12} md={8}>
             <h2 className={classes.title}>Help Us Improve!</h2>
