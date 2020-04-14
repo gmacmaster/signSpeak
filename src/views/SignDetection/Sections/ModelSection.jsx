@@ -38,8 +38,11 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
-const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try21/model.json';
+// const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try19/model.json';
 //try 5,6, 14 best so far
+
+const MODEL_URL = 'http://localhost:8000/modelTries/try1/model.json';
+
 
 const modelParams = {
   flipHorizontal: true,
