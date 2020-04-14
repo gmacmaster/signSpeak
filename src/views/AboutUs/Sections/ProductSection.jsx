@@ -36,7 +36,7 @@ class ProductSection extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
+      <div className={classes.section} style={{paddingBottom: '0'}}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>The Project</h2>
@@ -54,7 +54,7 @@ class ProductSection extends React.Component {
               at the differences and challenges among various object detection
               algorithms, how computing power affects how fast and efficiently
               code can run, and how difficult it can be to work with people.
-              Read the full paper <a>here</a>.
+              Read the full paper <a href={"https://gmacmaster.github.io/signSpeak/Thesis.pdf"} target={"_blank"}>here</a>.
             </h5>
           </GridItem>
         </GridContainer>

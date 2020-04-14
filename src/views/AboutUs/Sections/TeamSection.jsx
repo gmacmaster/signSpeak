@@ -49,7 +49,7 @@ class TeamSection extends React.Component {
       classes.imgFluid
     );
     return (
-      <div className={classes.section}>
+      <div className={classes.section} style={{paddingTop: '0', paddingBottom: '0'}}>
         <h2 className={classes.title}>Our Team</h2>
         <div>
           <GridContainer>

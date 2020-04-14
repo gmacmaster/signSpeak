@@ -44,7 +44,7 @@ import pillsStyle from "assets/jss/material-kit-react/views/componentsSections/p
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 import Dashboard from "@material-ui/core/SvgIcon/SvgIcon";
 
-const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/modelTries/try8/model.json';
+const MODEL_URL = 'https://raw.githubusercontent.com/gmacmaster/signSpeak/master/models/try6/model.json';
 //try 5,6, 14 best so far
 // model tries: 2, 3, 8
 
@@ -60,7 +60,7 @@ const modelParams = {
 
 const STANDARD_COLORS = [
   'AliceBlue', 'Chartreuse', 'Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque',
-  'BlanchedAlmond', 'BlueViolet', 'BurlyWood',
+  'BlueViolet', 'BurlyWood',
   'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan',
   'DarkCyan', 'DarkGoldenRod', 'DarkGrey', 'DarkKhaki', 'DarkOrange',
   'DarkOrchid', 'DarkSalmon', 'DarkSeaGreen', 'DarkTurquoise', 'DarkViolet',
@@ -120,6 +120,7 @@ class ModelSection extends React.Component {
     this.renderPredictionBoxes = this.renderPredictionBoxes.bind(this);
     this.setResultSize = this.setResultSize.bind(this);
     this.handleTabChange = this.handleTabChange.bind(this);
+    this.swichLetter = this.swichLetter.bind(this);
   }
 
   componentWillMount() {
@@ -150,6 +151,11 @@ class ModelSection extends React.Component {
         this.setState({currentSign: randSign, activeTab});
         break;
     }
+  }
+
+  swichLetter(){
+    const randSign = Math.floor(Math.random()*this.signs.length);
+    this.setState({currentSign: randSign});
   }
 
   async detectObjects () {
@@ -358,7 +364,8 @@ class ModelSection extends React.Component {
                                   Sign the letter {this.signs[this.state.currentSign].Name}
                                   <img src={this.signs[this.state.currentSign].URL}
                                        alt={this.signs[this.state.currentSign].Name}
-                                       style={{marginBottom: '10px'}}
+                                       style={{marginBottom: '10px', cursor: 'pointer'}}
+                                       onClick={this.swichLetter}
                                   />
                                 </span>
                               )
@@ -369,6 +376,8 @@ class ModelSection extends React.Component {
                               tabContent: (
                                 <span>
                                   Sign the letter {this.signs[this.state.currentSign].Name}
+                                  <br/>
+                                  <a onClick={this.swichLetter} style={{cursor: 'pointer'}}>Switch</a>
                                 </span>
                               )
                             },
