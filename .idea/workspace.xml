@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/views/AboutUs/Sections/ProductSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AboutUs/Sections/ProductSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/AboutUs/Sections/WorkSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AboutUs/Sections/WorkSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
+            <state relative-caret-position="1003">
               <caret line="86" column="107" selection-start-line="86" selection-start-column="101" selection-end-line="86" selection-end-column="107" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -38,12 +35,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <state relative-caret-position="17">
+              <caret line="46" column="87" lean-forward="true" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
               <folding>
                 <element signature="e#753#814#0" expanded="true" />
                 <element signature="e#983#1049#0" expanded="true" />
-                <element signature="e#1107#1169#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,11 +203,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gordo\Documents\ML Project\site\modelTries\try12" />
       <recent name="C:\Users\gordo\Documents\ML Project\site\public" />
       <recent name="C:\Users\gordo\Documents\ML Project\site" />
       <recent name="C:\Users\gordo\Documents\ML Project\site\modelTries" />
       <recent name="C:\Users\gordo\Documents\ML Project\site\models\try19" />
-      <recent name="C:\Users\gordo\Documents\ML Project\site\models\try20" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -250,16 +246,18 @@
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
       <workItem from="1586197198794" duration="52654000" />
+      <workItem from="1586890041804" duration="373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192353000" />
+    <option name="totallyTimeSpent" value="192726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="855" y="-1089" width="1298" height="1098" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2452381" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2452381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -274,7 +272,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007962" side_tool="true" weight="0.21802935" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49920383" visible="true" weight="0.21554404" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49920383" visible="true" weight="0.21554404" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -331,9 +329,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Test/Utils/Signs.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Test/Utils/Signs.json" />
     <entry file="file://$PROJECT_DIR$/src/views/ImageChecking/Utils/Signs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -341,59 +337,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Test/Model/model.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@tensorflow/tfjs-converter/dist/src/executor/graph_model.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="e#703#806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Test/HelpTrain.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-863">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#940#990#0" expanded="true" />
-            <element signature="e#1446#1499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Test/handtrack/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1115">
-          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Test/Sections/WorkSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3978">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#685#720#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/handtrack/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Test/Model/model.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@tensorflow/tfjs-converter/dist/src/executor/graph_model.d.ts" />
+    <entry file="file://$PROJECT_DIR$/src/views/Test/HelpTrain.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/views/Test/handtrack/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/views/Test/Sections/WorkSection.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/handtrack/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -492,18 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="107" selection-start-line="86" selection-start-column="101" selection-end-line="86" selection-end-column="107" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#939#989#0" expanded="true" />
-            <element signature="e#1445#1498#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -701,14 +638,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/SignDetection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="86" column="107" selection-start-line="86" selection-start-column="101" selection-end-line="86" selection-end-column="107" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#939#989#0" expanded="true" />
+            <element signature="e#1445#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="46" column="87" lean-forward="true" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
           <folding>
             <element signature="e#753#814#0" expanded="true" />
             <element signature="e#983#1049#0" expanded="true" />
-            <element signature="e#1107#1169#0" expanded="true" />
           </folding>
         </state>
       </provider>
