@@ -215,7 +215,6 @@ class ModelSection extends React.Component {
               this.setResultSize();
 
               this.state.isVideoStreamReady = true;
-              this.setState({ isModelReady: true});
               console.log('webcam stream initialized');
               resolve()
             }
@@ -229,30 +228,44 @@ class ModelSection extends React.Component {
 
   loadCustomModel() {
     let isModelReady = false;
-    tf.setBackend('wasm').then(() => {
-      return loadGraphModel(MODEL_URL)
-          .then((model) => {
-            this.model = model;
-            console.log('model loaded: ', model)
-          })
-          .catch((error) => {
-            console.log('failed to load the model', error);
-            throw (error)
-          })
-    });
+    return loadGraphModel(MODEL_URL)
+        .then((model) => {
+          this.model = model;
+          console.log('model loaded: ', model)
+          this.setState({ isModelReady: true});
+        })
+        .catch((error) => {
+          console.log('failed to load the model', error);
+          this.setState({ isModelReady: false});
+          throw (error)
+        });
   }
 
   loadModelAndDetection(){
-    this.modelPromise = this.loadCustomModel();
+    tf.setBackend('wasm').then(() => {
+      this.modelPromise = this.loadCustomModel();
 
-    // wait for both stream and model promise finished then start detecting objects
-    Promise.all([this.streamPromise, this.modelPromise])
-        .then(() => {
-          this.detectObjects()
-        }).catch((error) => {
-      console.log('Failed to init stream and/or model: ');
-      this.initFailMessage = error
-    })
+      // wait for both stream and model promise finished then start detecting objects
+      Promise.all([this.streamPromise, this.modelPromise])
+          .then(() => {
+            this.detectObjects()
+          }).catch((error) => {
+        console.log('Failed to init stream and/or model: ');
+        this.initFailMessage = error
+      })
+    }).catch(() => {
+      this.modelPromise = this.loadCustomModel();
+
+      // wait for both stream and model promise finished then start detecting objects
+      Promise.all([this.streamPromise, this.modelPromise])
+          .then(() => {
+            this.detectObjects()
+          }).catch((error) => {
+        console.log('Failed to init stream and/or model: ');
+        this.initFailMessage = error
+      })
+    });
+
   }
 
   renderPredictionBoxes (predictionBoxes, totalPredictions, predictionClasses, predictionScores) {
@@ -306,7 +319,7 @@ class ModelSection extends React.Component {
       ctx.lineWidth = 1;
       ctx.strokeStyle = '#0063FF';
       ctx.fillStyle = "#0063FF"; // "rgba(244,247,251,1)";
-      ctx.font = "bold 12px Arial";
+      ctx.font = "12px Arial";
       ctx.fillText("[FPS]: " + this.fps, 10, 20)
     }
   }

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" description="}" line="242" />
+    <bookmark url="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" description="}" line="241" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd333862-fc71-4bba-b6cd-f734e3a6a7ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="231" column="23" selection-start-line="231" selection-start-column="19" selection-end-line="231" selection-end-column="23" />
+            <state relative-caret-position="665">
+              <caret line="265" column="8" selection-start-line="265" selection-start-column="8" selection-end-line="265" selection-end-column="8" />
               <folding>
                 <element signature="e#753#814#0" expanded="true" />
                 <element signature="e#983#1049#0" expanded="true" />
@@ -48,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="442">
               <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -74,7 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>video</find>
       <find>signs.</find>
       <find>Signs</find>
       <find>Signs.</find>
@@ -84,7 +82,6 @@
       <find>canvas</find>
       <find>.canvas</find>
       <find>loading</find>
-      <find>isModelReady</find>
       <find>node_path</find>
       <find>CircularProgress</find>
       <find>600</find>
@@ -104,6 +101,8 @@
       <find>tf.</find>
       <find>tfImg</find>
       <find>tf.read</find>
+      <find>isModelReady</find>
+      <find>this.model</find>
     </findStrings>
     <replaceStrings>
       <replace>Sign</replace>
@@ -171,8 +170,8 @@
         <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/ProductSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/TeamSection.jsx" />
         <option value="$PROJECT_DIR$/src/views/AboutUs/Sections/WorkSection.jsx" />
-        <option value="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx" />
       </list>
     </option>
   </component>
@@ -264,12 +263,12 @@
       <workItem from="1581614007691" duration="5011000" />
       <workItem from="1582157622308" duration="599000" />
       <workItem from="1586197198794" duration="52654000" />
-      <workItem from="1586890041804" duration="2308000" />
+      <workItem from="1586890041804" duration="3457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194661000" />
+    <option name="totallyTimeSpent" value="195810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="857" y="-1080" width="1294" height="1087" extended-state="0" />
@@ -655,27 +654,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="231" column="23" selection-start-line="231" selection-start-column="19" selection-end-line="231" selection-end-column="23" />
-          <folding>
-            <element signature="e#753#814#0" expanded="true" />
-            <element signature="e#983#1049#0" expanded="true" />
-            <element signature="e#1265#1327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="442">
           <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#607#633#0" expanded="true" />
             <element signature="e#860#904#0" expanded="true" />
             <element signature="e#1142#1202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SignDetection/Sections/ModelSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="265" column="8" selection-start-line="265" selection-start-column="8" selection-end-line="265" selection-end-column="8" />
+          <folding>
+            <element signature="e#753#814#0" expanded="true" />
+            <element signature="e#983#1049#0" expanded="true" />
+            <element signature="e#1265#1327#0" expanded="true" />
           </folding>
         </state>
       </provider>
